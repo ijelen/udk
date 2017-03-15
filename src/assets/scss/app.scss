@@ -153,6 +153,7 @@ header #kontakt {
  		min-height: 100%; 
   		box-shadow: none;
   		top: initial;
+  		overflow: initial;
 	}
 }
 
@@ -207,7 +208,7 @@ header #kontakt {
     transform: translateY(-100%);
 }
 
-
+nav ul.menu {margin-top: 2rem;}
 .menu > li > a {
 	line-height: 1.8; 
 	text-transform: uppercase; 
