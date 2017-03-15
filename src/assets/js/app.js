@@ -22,7 +22,6 @@ window.addEventListener('scroll', isVisible)
 
 // By Chris Coyier & tweaked by Mathias Bynens
 // https://css-tricks.com/fluid-width-youtube-videos/
-
 $(function() {
 
 	// Find all YouTube videos
