@@ -9,6 +9,22 @@ function resizeFixedLeftMenu () {
 resizeFixedLeftMenu();
 window.addEventListener('resize', resizeFixedLeftMenu);
 
+// Toggle mobile menu
+function hideMenu() {menu.className = "";}
+var toggle = document.getElementById("left-menu-toggle");
+var menu = document.getElementById("left-menu");
+toggle.addEventListener("click", function() {
+	if (menu.className == "showed") {
+		menu.className = "";
+		window.removeEventListener('scroll', hideMenu);
+	}
+	else {
+		menu.className = "showed";
+		window.addEventListener('scroll', hideMenu);
+	}
+	
+})
+
 // Attach class "enlarge" to hero-image when windows scrolls for 150px
 function isVisible() {
 	if (window.scrollY > 150) {

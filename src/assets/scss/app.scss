@@ -144,7 +144,12 @@ header #kontakt {
 	position: fixed;
 	box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.32);
 	z-index: 10;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 1.3s ease;
+	&.showed {max-height: 100%}
 	@media screen and #{breakpoint(medium)} {
+		/*min-height always overrides max-height*/
  		min-height: 100%; 
   		box-shadow: none;
   		top: initial;
