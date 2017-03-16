@@ -116,6 +116,12 @@ h2 {
 		display: none
 		}
 	}
+#main p a {
+	border-bottom: 2px solid lighten(#4d4ea1, 20%);
+	color: inherit;
+}
+
+
 header#glava p {border-top: solid 3px $primary-color;}
 header #kontakt {
 	position: absolute;
@@ -271,6 +277,20 @@ article {
 			content: '|';
 			color: #ccc;
 			margin-right: .25rem;
+		}
+	}
+	.photos {
+		
+		&:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+		div {
+			width: 20%;
+			float: left;
+			padding: rem-calc(5);
+			img {margin: 0 auto; display: block;}
 		}
 	}
 }
