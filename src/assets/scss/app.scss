@@ -103,7 +103,7 @@ h2 {
 	border-bottom-right-radius: 6px;
 }
 #main svg.logo {
-	width: 60%; 
+	width: 55%; 
 	margin: 3.3rem 0 0 0;
 	@media screen and #{breakpoint(medium only)} {
 		margin-top: 2.8rem;
@@ -218,10 +218,12 @@ header #kontakt {
     transform: translateY(-100%);
 }
 
-nav ul.menu {margin-top: 2rem;}
+nav > ul.menu {margin-top: 2rem;}
 .menu > li > a {
 	line-height: 1.8; 
-	text-transform: uppercase; 
+	@media screen and #{breakpoint(medium)} {
+		text-transform: uppercase;
+	} 
 	@media screen and #{breakpoint(medium only)} {
 		font-size: .9rem;
 	}
@@ -279,7 +281,6 @@ article {
 		}
 	}
 	.photos {
-		
 		&:after {
 			content: '';
 			display: block;
@@ -289,6 +290,10 @@ article {
 			width: 20%;
 			float: left;
 			padding: rem-calc(5);
+			@media screen and #{breakpoint(small only)} {
+				width: 25%;
+				padding: rem-calc(4);
+			}
 			img {margin: 0 auto; display: block;}
 		}
 	}
