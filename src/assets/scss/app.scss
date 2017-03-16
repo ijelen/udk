@@ -306,10 +306,21 @@ path:hover {fill: lighten(#4d4ea1, 6%);}
 
 /* Footer */
 
-footer .search-form {
+footer {
+	p {
+		color: #777;  
+		padding: 0;
+		font-family: 'Open Sans', sans-serif;
+		font-size: .9rem;
+	}
+	#small-print svg.logo {
+		width: 8rem;
+		path {fill: #999;}
+	}
+	.search-form {
 	@media screen and #{breakpoint(medium)} {
 		display: none
+		}
 	}
-
 }
 
