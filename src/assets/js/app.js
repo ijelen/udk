@@ -80,3 +80,6 @@ Headroom.options.onUnpin = function() {
 var headroom  = new Headroom(titleBar);
 // initialise
 headroom.init();
+
+// Fire Swipebox
+$('.swipebox').swipebox();
