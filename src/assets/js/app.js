@@ -10,17 +10,14 @@ resizeFixedLeftMenu();
 window.addEventListener('resize', resizeFixedLeftMenu);
 
 // Toggle mobile menu
-function hideMenu() {menu.className = "";}
 var toggle = document.getElementById("left-menu-toggle");
 var menu = document.getElementById("left-menu");
 toggle.addEventListener("click", function() {
 	if (menu.className == "showed") {
 		menu.className = "";
-		window.removeEventListener('scroll', hideMenu);
 	}
 	else {
 		menu.className = "showed";
-		window.addEventListener('scroll', hideMenu);
 	}
 	
 })
@@ -28,9 +25,9 @@ toggle.addEventListener("click", function() {
 // Attach class "enlarge" to hero-image when windows scrolls for 150px
 function isVisible() {
 	if (window.scrollY > 150) {
-		heroImage.classList.add('enlarge')
+		heroImage.className = 'enlarge';
 	} else {
-		heroImage.classList.remove('enlarge')
+		heroImage.className = '';
 	}
 }
 var heroImage = document.getElementById('hero-image');
@@ -83,6 +80,13 @@ $(function() {
 // Headroom.js
 // grab an element
 var myElement = document.querySelector("#title-bar");
+// Set the option
+Headroom.options.onUnpin = function() {
+	menu.className = "";
+	// Apply for a second for a rare occasion that the menu isn't clicked but the window is scrolled
+	menu.style.display = "none";
+	setTimeout(function(){menu.style.display = "block"; }, 1000);
+}
 // construct an instance of Headroom, passing the element
 var headroom  = new Headroom(myElement);
 // initialise

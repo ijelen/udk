@@ -146,8 +146,12 @@ header #kontakt {
 	z-index: 10;
 	max-height: 0;
 	overflow: hidden;
-	transition: max-height 1.3s ease;
+	transition: max-height 1s ease;
 	&.showed {max-height: 100%}
+	/* Class that's applied for a second for a rare occasion that the menu isn't clicked but the window is scrolled*/
+	&.quicklyHidden {
+		display: none;
+	}
 	@media screen and #{breakpoint(medium)} {
 		/*min-height always overrides max-height*/
  		min-height: 100%; 
