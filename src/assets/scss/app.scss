@@ -294,7 +294,8 @@ article {
 				width: 25%;
 				padding: rem-calc(4);
 			}
-			img {margin: 0 auto; display: block;}
+			img {margin: 0 auto; display: block; transition: .6s all}
+			img:hover {box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.32);}
 		}
 	}
 }
@@ -307,11 +308,13 @@ path:hover {fill: lighten(#4d4ea1, 6%);}
 /* Footer */
 
 footer {
+	padding-bottom: 1rem;
 	p {
 		color: #777;  
 		padding: 0;
 		font-family: 'Open Sans', sans-serif;
-		font-size: .9rem;
+		font-size: .8rem;
+		margin-bottom: rem-calc(5);
 	}
 	#small-print svg.logo {
 		width: 8rem;
