@@ -73,7 +73,7 @@ var titleBar = document.querySelector("#title-bar");
 Headroom.options.onUnpin = function() {
 	if ($('#title-bar').is(":visible")) {
 		menu.className = "";
-		// Apply for a second for a rare occasion that the menu isn't clicked but the window is scrolled
+		// Hide the menu for a second for a rare occasion that it isn't clicked but the window is scrolled
 		menu.style.display = "none";
 		setTimeout(function(){menu.style.display = "block"; }, 1000);
 	}
