@@ -2,12 +2,14 @@ $(document).foundation();
 
 
 // resize left fixed column, Since it's fixed positioned, it cannot be fluid without js help
-function resizeFixedLeftMenu () {
+var resizeFixedLeftMenu = function() {
 	var fixedWidth = $('#left-menu-wrapper').css('width');
 	$('#left-menu').css('width', fixedWidth);
-}
+};
 resizeFixedLeftMenu();
-window.addEventListener('resize', resizeFixedLeftMenu);
+// debounce plugin https://www.npmjs.com/package/javascript-debounce
+// Had to be ignored by Babel plugin in gulpfile.babel.js
+window.addEventListener('resize', debounce(resizeFixedLeftMenu, 200));
 
 // Toggle mobile menu
 var toggle = document.getElementById("left-menu-toggle");
@@ -15,7 +17,7 @@ var menu = document.getElementById("left-menu");
 toggle.addEventListener("click", function() {
 	if (menu.className === "showed") {
 		menu.className = "";
-	}
+	} 
 	else {
 		menu.className = "showed";
 	}
@@ -30,7 +32,7 @@ function isVisible() {
 	}
 }
 var heroImage = document.getElementById('hero-image');
-window.addEventListener('scroll', isVisible)
+window.addEventListener('scroll', debounce(isVisible, 200));
 
 // By Chris Coyier & tweaked by Mathias Bynens
 // https://css-tricks.com/fluid-width-youtube-videos/
@@ -48,8 +50,8 @@ $(function() {
 			.removeAttr('width');
 	});
 	// When the window is resized
-	// (You'll probably want to debounce this)
-	$(window).resize(function() {
+	// (You'll probably want to debounce this), I did :)
+	$(window).resize(debounce(function() {
 		var newWidth = $fluidEl.width();
 		// Resize all videos according to their own aspect ratio
 		$allVideos.each(function() {
@@ -59,13 +61,13 @@ $(function() {
 				.height(newWidth * $el.data('aspectRatio'));
 		});
 	// Kick off one resize to fix all videos on page load
-	}).resize();
+	}, 200)).resize();
 
 });
 
 
 // Headroom.js
-// grab an element
+// Had to be ignored by Babel plugin in gulpfile.babel.js
 var titleBar = document.querySelector("#title-bar");
 // Set the option
 Headroom.options.onUnpin = function() {
@@ -76,9 +78,7 @@ Headroom.options.onUnpin = function() {
 		setTimeout(function(){menu.style.display = "block"; }, 1000);
 	}
 }
-// construct an instance of Headroom, passing the element
 var headroom  = new Headroom(titleBar);
-// initialise
 headroom.init();
 
 // Fire Swipebox

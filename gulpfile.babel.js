@@ -97,7 +97,7 @@ function sass() {
 function javascript() {
   return gulp.src(PATHS.javascript)
     .pipe($.sourcemaps.init())
-    .pipe($.babel({ignore: ['what-input.js', 'headroom.min.js']}))
+    .pipe($.babel({ignore: ['what-input.js', 'headroom.min.js', 'javascript-debounce.min.js']}))
     .pipe($.concat('app.js'))
     .pipe($.if(PRODUCTION, $.uglify()
       .on('error', e => { console.log(e); })

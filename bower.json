@@ -17,7 +17,8 @@
   "dependencies": {
     "foundation-sites": "~6.3.0",
     "motion-ui": "~1.2.2",
-    "swipebox": "^1.4.4"
+    "swipebox": "^1.4.4",
+    "javascipt-debounce": "javascript-debounce#^1.0.0"
   },
   "private": true
 }
