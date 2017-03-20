@@ -101,6 +101,7 @@ h2 {
 	min-height: 100vh;
 	border-top-right-radius: 6px;
 	border-bottom-right-radius: 6px;
+	transition: filter 1s;
 }
 #main svg.logo {
 	width: 55%; 
@@ -178,6 +179,7 @@ header #kontakt {
 	background-color: $primary-color;
 	position: fixed;
 	width: 100%;
+	z-index: 5;
 }
 
 #logo {
@@ -352,7 +354,9 @@ path:hover {fill: lighten(#4d4ea1, 6%);}
 /* Footer */
 
 footer {
-	padding-bottom: 1rem;
+	border-top: 1px solid #999;
+	padding: 1rem 0;
+	margin-top: 3rem;
 	p {
 		color: #777;  
 		padding: 0;
@@ -362,6 +366,7 @@ footer {
 	}
 	#small-print svg.logo {
 		width: 8rem;
+		margin-top: 0;
 		path {fill: #999;}
 	}
 	.search-form {

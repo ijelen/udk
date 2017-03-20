@@ -17,9 +17,11 @@ var menu = document.getElementById("left-menu");
 toggle.addEventListener("click", function() {
 	if (menu.className === "showed") {
 		menu.className = "";
+		document.getElementById('main').style.filter = "blur(0)";
 	} 
 	else {
 		menu.className = "showed";
+		document.getElementById('main').style.filter = "blur(1px)";
 	}
 })
 
@@ -73,6 +75,7 @@ var titleBar = document.querySelector("#title-bar");
 Headroom.options.onUnpin = function() {
 	if ($('#title-bar').is(":visible")) {
 		menu.className = "";
+		document.getElementById('main').style.filter = "blur(0)";
 		// Hide the menu for a second for a rare occasion that it isn't clicked but the window is scrolled
 		menu.style.display = "none";
 		setTimeout(function(){menu.style.display = "block"; }, 1000);
