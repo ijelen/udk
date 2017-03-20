@@ -92,6 +92,7 @@ h2 {
 #main {
 	padding: 0 2rem;
 	@media screen and #{breakpoint(small only)} {
+		body.show-left-menu & {filter: blur(1px);}
 		padding-top: 2rem;
 		}
 	@media screen and #{breakpoint(medium only)} {
@@ -154,7 +155,7 @@ header #kontakt {
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 1s ease;
-	&.showed {max-height: 100%}
+	body.show-left-menu & {max-height: 100%}
 	/* Class that's applied for a second for a rare occasion that the menu isn't clicked but the window is scrolled*/
 	&.quicklyHidden {
 		display: none;

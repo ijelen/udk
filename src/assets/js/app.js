@@ -13,16 +13,8 @@ window.addEventListener('resize', debounce(resizeFixedLeftMenu, 200));
 
 // Toggle mobile menu
 var toggle = document.getElementById("left-menu-toggle");
-var menu = document.getElementById("left-menu");
 toggle.addEventListener("click", function() {
-	if (menu.className === "showed") {
-		menu.className = "";
-		document.getElementById('main').style.filter = "blur(0)";
-	} 
-	else {
-		menu.className = "showed";
-		document.getElementById('main').style.filter = "blur(1px)";
-	}
+	$('body').toggleClass('show-left-menu');
 })
 
 // Attach class "enlarge" to hero-image when windows scrolls for 150px
@@ -74,9 +66,9 @@ var titleBar = document.querySelector("#title-bar");
 // Set the option
 Headroom.options.onUnpin = function() {
 	if ($('#title-bar').is(":visible")) {
-		menu.className = "";
-		document.getElementById('main').style.filter = "blur(0)";
+		$('body').removeClass('show-left-menu');
 		// Hide the menu for a second for a rare occasion that it isn't clicked but the window is scrolled
+		var menu = document.getElementById('left-menu');
 		menu.style.display = "none";
 		setTimeout(function(){menu.style.display = "block"; }, 1000);
 	}
