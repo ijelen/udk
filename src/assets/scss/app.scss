@@ -300,9 +300,53 @@ article {
 	}
 }
 
+/* #vise-vijesti */
+#vise-vijesti {
+	margin-top: 3rem;
+	&::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	div {
+		@media screen and #{breakpoint(medium)} {			
+			float: left;
+			width: 50%;
+		}
+	}
+	div:nth-child(1) {
+		@media screen and #{breakpoint(medium)} {
+			padding-right: 1rem;
+		}
+	}
+	div:nth-child(2) {
+		@media screen and #{breakpoint(medium)} {
+			padding-left: 1rem;
+		}
+	}
+	h2 {
+		font-size: 1rem;
+		margin-top: rem-calc(10);
+	}
+	p {
+		margin-bottom: 0;
+		font-size: .9rem;
+		.autor {margin-left: .2rem;}
+		.autor:before {
+			content: '|';
+			color: #ccc;
+			margin-right: .2rem;
+		}
+	}
+}
+
 /* SVG */
 path {fill: #4d4ea1; transition: all .7s;}
 path:hover {fill: lighten(#4d4ea1, 6%);}
+
+.pagination {
+	margin-top: 4rem;
+}
 
 
 /* Footer */
