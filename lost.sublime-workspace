@@ -1,0 +1,930 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"left",
+				"left-menu"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"resi",
+				"resizeFixedLeftMenu"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"clas",
+				"classList"
+			],
+			[
+				"tra",
+				"transition-duration"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"i",
+				"inherit"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"small",
+				"small-3"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"border-radius",
+				"border-top-right-radius"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"hidden",
+				"hidden-anchor"
+			],
+			[
+				"u",
+				"uppercase"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"sp",
+				"space-around"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"rese",
+				"resetCounter"
+			],
+			[
+				"counter",
+				"counterModule"
+			],
+			[
+				"render",
+				"renderFishes"
+			],
+			[
+				"ne",
+				"nextState"
+			],
+			[
+				"ored",
+				"orderTotal"
+			],
+			[
+				"a",
+				"addToOrder"
+			],
+			[
+				"bu",
+				"butttonText"
+			],
+			[
+				"cla",
+				"className"
+			],
+			[
+				"store",
+				"storeInput"
+			],
+			[
+				"React",
+				"ReactRouter"
+			],
+			[
+				"Store",
+				"StorePicker"
+			],
+			[
+				"REa",
+				"ReactRouter"
+			],
+			[
+				"Rea",
+				"ReactRouter"
+			],
+			[
+				"space",
+				"space-between"
+			],
+			[
+				"over",
+				"overflow-y"
+			],
+			[
+				"fle",
+				"flex-flow"
+			],
+			[
+				"flex",
+				"flex-wrap"
+			],
+			[
+				"bord",
+				"border-color"
+			],
+			[
+				"align",
+				"align-items"
+			],
+			[
+				"alig",
+				"align-content"
+			],
+			[
+				"ali",
+				"align-items"
+			],
+			[
+				"cou",
+				"counter-increment"
+			],
+			[
+				"men",
+				"mobile_menu"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"page",
+				"page-break-inside"
+			],
+			[
+				"word",
+				"word-wrap"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"bi",
+				"border-image"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"bs",
+				"box-sizing"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"ps",
+				"position"
+			],
+			[
+				"gr",
+				"grend"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"fon",
+				"font-weight-heavy"
+			],
+			[
+				"run",
+				"runSequence"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"gulp",
+				"gulpnano"
+			],
+			[
+				"b",
+				"browserSync"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/data/global.yml",
+			"settings":
+			{
+				"buffer_size": 452,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/igorj/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 736,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/pages/fotogalerija.html",
+			"settings":
+			{
+				"buffer_size": 4452,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/assets/js/app.js",
+			"settings":
+			{
+				"buffer_size": 2549,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 323.0,
+		"last_filter": "insta",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"scss",
+				"Set Syntax: CSS"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"e",
+				"Emoji: Insert Emoji"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"emoji",
+				"Emoji: Insert Emoji"
+			],
+			[
+				"mate",
+				"Material Theme: Activate theme"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 382.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/igorj/Dropbox/web/Lost",
+		"/C/Users/igorj/Dropbox/web/Lost/src",
+		"/C/Users/igorj/Dropbox/web/Lost/src/helpers",
+		"/C/Users/igorj/Dropbox/web/Lost/src/pages",
+		"/C/Users/igorj/Dropbox/web/Lost/src/partials"
+	],
+	"file_history":
+	[
+		"/C/Users/igorj/Dropbox/web/Lost/dist/novost.html",
+		"/C/Users/igorj/Dropbox/web/Lost/src/pages/index.html",
+		"/C/Users/igorj/Dropbox/web/Lost/src/layouts/default.html",
+		"/C/Users/igorj/Dropbox/web/Lost/src/assets/scss/app.scss",
+		"/C/Users/igorj/Dropbox/web/Lost/src/helpers/datum.js",
+		"/C/Users/igorj/Dropbox/web/Lost/gulpfile.babel.js",
+		"/C/Users/igorj/Dropbox/web/Lost/src/pages/fotoalbum.html",
+		"/C/Users/igorj/Dropbox/web/Lost/src/data/fotogalerija.json",
+		"/C/Users/igorj/Dropbox/web/Lost/src/data/fotogalerija.yml",
+		"/C/Users/igorj/Dropbox/web/Lost/src/pages/novost.html",
+		"/C/Users/igorj/projects/Lost/src/assets/js/app.js",
+		"/C/Users/igorj/projects/Lost/src/assets/scss/app.scss",
+		"/C/Users/igorj/projects/Lost/src/pages/index.html",
+		"/C/Users/igorj/Dropbox/web/Lost/.git/COMMIT_EDITMSG",
+		"/C/Users/igorj/projects/Lost/.git/COMMIT_EDITMSG",
+		"/C/Users/igorj/projects/Lost/gulpfile.babel.js",
+		"/C/Users/igorj/projects/Lost/src/assets/scss/vendor/_swipebox.scss",
+		"/C/Users/igorj/projects/LyndaCreatingRWD/css/screen.css",
+		"/C/Users/igorj/Desktop/UDK redizajn/swipebox-master/swipebox-master/src/css/swipebox.min.css",
+		"/C/Users/igorj/projects/Lost/dist/assets/css/app.css",
+		"/C/Users/igorj/projects/LyndaCreatingRWD/index.html",
+		"/C/Users/igorj/Desktop/UDK/natjecaji.aspx",
+		"/C/Users/igorj/projects/Lost/.gitignore",
+		"/C/Users/igorj/projects/Lost/src/assets/scss/_settings.scss",
+		"/C/Users/igorj/projects/Lost/src/partials/arhiva-po-mjesecima.html",
+		"/C/Users/igorj/projects/Lost/src/assets/js/test.js",
+		"/C/Users/igorj/projects/Lost/bower.json",
+		"/C/Users/igorj/projects/Lost/src/assets/img/logo.svg",
+		"/C/Users/igorj/projects/Lost/src/partials/svg_logo_2.html",
+		"/C/Users/igorj/Dropbox/radio_vrbovec/css/foundation.css",
+		"/C/Users/igorj/projects/Lost/src/assets/img/fi-mail.svg",
+		"/C/Users/igorj/projects/Lost/src/partials/fi-mail.html",
+		"/C/Users/igorj/projects/Lost/src/partials/svg_logo.html",
+		"/C/Users/igorj/.bashrc",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Users/igorj/Desktop/UDK redizajn/foundation-icons/foundation-icons/svgs/fi-mail.svg",
+		"/C/Users/igorj/Desktop/UDK redizajn/Ucenicki-dom-Krizevci.svg",
+		"/C/Users/igorj/Desktop/UDK redizajn/yt-01.svg",
+		"/C/Users/igorj/projects/Lost/config.yml",
+		"/C/Users/igorj/Desktop/UDK redizajn/webfontkit-20170302-121142/stylesheet.css",
+		"/C/Users/igorj/projects/Lost/src/layouts/default.html",
+		"/C/Users/igorj/Desktop/UDK/domski_filmovi.aspx",
+		"/C/Users/igorj/Desktop/UDK/dokumenti_doma-spremi.aspx",
+		"/C/Users/igorj/Desktop/UDK/dokumenti_doma.aspx",
+		"/C/Users/igorj/Desktop/UDK/dokumenti_doma - Copy.aspx",
+		"/C/Users/igorj/projects/Lost/dist/index.html",
+		"/C/Users/igorj/Desktop/html5up-twenty/assets/css/main.css",
+		"/C/Users/igorj/Desktop/html5up-twenty/index.html",
+		"/C/Users/igorj/Desktop/UDK/style.css",
+		"/C/Users/igorj/Desktop/UDK/header.ascx",
+		"/C/Users/igorj/Desktop/UDK/default.aspx",
+		"/C/Users/igorj/Desktop/UDK/javna_nabava.aspx",
+		"/C/Users/igorj/projects/catch-of-the-day/src/module.js",
+		"/C/Users/igorj/projects/catch-of-the-day/src/css/style.styl",
+		"/C/Users/igorj/projects/catch-of-the-day/src/components/AddFishForm.js",
+		"/C/Users/igorj/Desktop/Roberto Orlić 1889277BA",
+		"/C/Users/igorj/projects/catch-of-the-day/src/base.js",
+		"/C/Users/igorj/projects/catch-of-the-day/src/components/App.js",
+		"/C/Users/igorj/Desktop/UDK/pristup_informacijama.aspx",
+		"/C/Users/igorj/Desktop/UDK/zakljucci_sjednica.aspx",
+		"/C/Users/igorj/projects/catch-of-the-day/src/components/Header.js",
+		"/C/Users/igorj/projects/catch-of-the-day/src/components/Inventory.js",
+		"/C/Users/igorj/projects/catch-of-the-day/src/components/Order.js",
+		"/C/Users/igorj/projects/catch-of-the-day/src/components/NotFound.js",
+		"/C/Users/igorj/projects/catch-of-the-day/package.json",
+		"/C/Users/igorj/Desktop/Bok, Sanja!",
+		"/C/Users/igorj/projects/React/build/main.js",
+		"/C/Users/igorj/projects/React/css/style.styl",
+		"/C/Users/igorj/projects/Flex/scripts/main.js",
+		"/C/Users/igorj/AppData/Roaming/Sublime Text 3/Packages/User/ColorHighlighter.sublime-settings",
+		"/C/Users/igorj/projects/LyndaCreatingRWD/css/print.css",
+		"/C/Users/igorj/projects/events/index.html",
+		"/C/Users/igorj/Desktop/Lynda - Creating a Responsive Web Design/Exercise Files/Ch01/01_01/snippets/section_content.html",
+		"/C/Users/igorj/projects/postcsslayouts/builds/postcss/css/style.css",
+		"/C/Users/igorj/Desktop/UDK/odgojne_skupine.aspx",
+		"/C/Users/igorj/projects/gulp-project/dist/index.html",
+		"/C/Users/igorj/projects/gulp-project/popis.html",
+		"/C/Users/igorj/projects/gulp-project/src/styles/app.css",
+		"/C/Users/igorj/projects/gulp-project/dist/js/combined.js",
+		"/C/Users/igorj/projects/gulp-project/index.html",
+		"/C/Users/igorj/projects/gulp-project/print.css",
+		"/C/Users/igorj/projects/gulp-project/js/b.js",
+		"/C/Users/igorj/projects/gulp-project/src/js/a.js",
+		"/C/Users/igorj/projects/gulp-project/js/a.js",
+		"/C/Users/igorj/projects/gulp-project/scss/print.scss",
+		"/C/Users/igorj/projects/gulp-project/scss/app.scss",
+		"/C/Users/igorj/projects/gulp-project/app.css",
+		"/C/Users/igorj/projects/gulp-project/package.json",
+		"/C/Users/igorj/projects/back-to-f/gulpfile.babel.js",
+		"/C/Users/igorj/Desktop/UDK/Poštovanje_2.txt",
+		"/C/Users/igorj/projects/gulp-project/gulpfile.js",
+		"/C/Users/igorj/projects/wordpress-vvv/www/wordpress-default/wp-content/themes/FoundationPress/index.php",
+		"/C/Users/igorj/projects/wordpress-vvv/www/wordpress-default/wp-content/themes/FoundationPress/header.php",
+		"/C/Users/igorj/projects/test-bs/style.css",
+		"/C/Users/igorj/projects/test-bs/index.html",
+		"/C/Users/igorj/projects/starter-web/.gitignore",
+		"/C/Users/igorj/projects/starter-web/.git/COMMIT_EDITMSG",
+		"/C/Users/igorj/projects/starter-web/README.md",
+		"/C/Users/igorj/projects/tachyons/css/tachyons.css",
+		"/C/Users/igorj/projects/tachyons/index.html",
+		"/C/Users/igorj/projects/tachyons/src/tachyons.css",
+		"/C/Users/igorj/projects/starter-web/.git/TAG_EDITMSG",
+		"/C/Users/igorj/projects/starter-web/simple.html",
+		"/C/Users/igorj/projects/starter-web/.git/MERGE_MSG",
+		"/C/Users/igorj/projects/starter-web/rsubl",
+		"/C/Users/igorj/.gitconfig",
+		"/C/Users/igorj/projects/starter-web/hipster.txt",
+		"/C/Users/igorj/projects/starter-web/doomed.txt",
+		"/C/Users/igorj/Desktop/wp/wordpress-vvv/Vagrantfile",
+		"/C/Users/igorj/Desktop/homestead_improved/after.sh",
+		"/C/Users/igorj/Desktop/foundation/Treci/src/pages/index.html",
+		"/C/Users/igorj/homestead_improved/Project/public/index.php",
+		"/C/Users/igorj/Desktop/UDK/fotogalerija.aspx",
+		"/C/Users/igorj/Desktop/foundation/Treci/dist/styleguide.html",
+		"/C/Users/igorj/Desktop/foundation/Treci/gulpfile.babel.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 92.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\"",
+			"pages",
+			"panini",
+			"margin",
+			"padding",
+			"03-11",
+			"article",
+			"title",
+			"datum",
+			"meta",
+			"colum",
+			"#F1F0EC",
+			"wrapper",
+			"pagination",
+			"resi",
+			"scroll",
+			"3px",
+			"2re",
+			"svg",
+			"upp",
+			"over",
+			".gif",
+			" a ",
+			"autor",
+			"33.",
+			"example-tabs",
+			"02-24",
+			"babel",
+			"babe",
+			"preset",
+			"small-2",
+			"svg",
+			" class=\"st0\"",
+			"primary",
+			"border",
+			"media",
+			"p",
+			"primary",
+			"class=\"boja\" ",
+			"st0",
+			"box",
+			"lodash",
+			"debou",
+			"color",
+			"colors",
+			"primary",
+			"22. me",
+			"menu",
+			"primary",
+			"brun.jpeg",
+			"border",
+			"menu",
+			"primary",
+			"$primary-color",
+			"primary",
+			"$black",
+			"title ba",
+			"02-15",
+			"23",
+			"02-15",
+			"â€“",
+			"Ă°",
+			"Ă¦",
+			"Ĺˇ",
+			"Ĺľ",
+			"Ă¨",
+			"ð",
+			"è",
+			"æ",
+			"title ba",
+			"nested",
+			".nested",
+			"pages",
+			"panin",
+			".important",
+			"important",
+			"50%",
+			"2016",
+			"12-21",
+			"start",
+			"gulp.task",
+			"12-20",
+			"2016",
+			"props",
+			"ul",
+			"removeFish",
+			"updateFish",
+			"addToOrder",
+			"renderFishes",
+			"Inventory",
+			"SampleFishes",
+			"Order",
+			"Header",
+			"header",
+			"Header",
+			"header",
+			"Header",
+			"menu",
+			"stylus",
+			"section.main",
+			"logo",
+			"script",
+			"nav::",
+			"section.h",
+			"atmos",
+			"12-19",
+			"20-21",
+			"2016-12",
+			"hello",
+			"HostsUpdater",
+			"tot",
+			"urlovi",
+			"09-30",
+			"10-03",
+			"2016-10-03",
+			"jesenj",
+			"gray",
+			"header"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"03-21",
+			"03-11",
+			"",
+			"boja",
+			"brun.jpg",
+			"02-25",
+			"24",
+			"02-23",
+			"-",
+			"đ",
+			"ć",
+			"š",
+			"ž",
+			"č",
+			"đ",
+			"č",
+			"ć",
+			"2017",
+			"02-15",
+			"01-31",
+			"2017",
+			"12-20",
+			"20-20",
+			"2016-20",
+			"10-10",
+			"10-05",
+			"2016-10-05"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/data/global.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 452,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								452,
+								452
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/igorj/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 736,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								480,
+								480
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/pages/fotogalerija.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4452,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3,
+								3
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/assets/js/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2549,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								813,
+								813
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "lost.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"gulpfile.babel.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 267.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
