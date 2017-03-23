@@ -90,6 +90,21 @@ h2 {
   color: $white;
 }
 
+.meta {
+	color: $meta-color; 
+	margin-bottom: .5rem; 
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: .9rem;
+	.autor {
+		margin-left: .25rem
+	}
+	.autor:before {
+		content: '|';
+		color: #ccc;
+		margin-right: .25rem;
+	}
+}
 
 #main {
 	padding: 0 2rem;
@@ -270,21 +285,7 @@ article {
 		}
 	}
 	figure {margin-bottom: 1rem}
-	.meta {
-		color: $meta-color; 
-		margin-bottom: .5rem; 
-		padding: 0;
-		font-family: 'Open Sans', sans-serif;
-		font-size: .9rem;
-		.autor {
-			margin-left: .25rem
-		}
-		.autor:before {
-			content: '|';
-			color: #ccc;
-			margin-right: .25rem;
-		}
-	}
+	
 	.photos {
 		&:after {
 			content: '';
