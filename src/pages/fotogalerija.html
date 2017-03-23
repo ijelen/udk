@@ -9,7 +9,7 @@ title: "| Fotogalerija"
     </header>
     <div id="fotogalerija">
       {{#each global.fotogalerija}}
-      <a class="swipebox" title="{{caption}}" href="http://ucenicki-dom-krizevci.hr{{url}}">
+      <a class="swipebox" title="{{caption}}" rel="gallery-1" href="http://ucenicki-dom-krizevci.hr{{url}}">
         <div class="item" style="background-image: url(http://res.cloudinary.com/dubrjmzy0/image/fetch/w_420,h_4200,c_fit/http://ucenicki-dom-krizevci.hr{{url}})"></div>
         <div class="caption"><p>{{caption}}</p></div>
       </a>
