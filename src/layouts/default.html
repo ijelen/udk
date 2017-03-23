@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Učenički dom Križevci</title>
+    <title>Učenički dom Križevci {{title}}</title>
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
   <body>
@@ -45,11 +45,12 @@
       </div>
       <!-- End: Search form -->
     <ul class="vertical menu" data-accordion-menu>
-      <li><a href="/o_domu.aspx">Naslovnica</a></li>
+      <li{{#ifpage 'index'}} class="active"{{/ifpage}}><a href="/index.html">Naslovnica</a></li>
       <li><a href="/o_domu.aspx">O domu</a></li>
+      <li{{#ifpage 'fotogalerija'}} class="active"{{/ifpage}}><a href="/fotogalerija.html">Fotogalerija</a></li>
       <li><a href="/dokumenti_doma.aspx">Dokumenti doma</a></li>
       <li><a href="/zakljucci_sjednica.aspx">Zaključci sjednica Domskog odbora</a></li>
-      <li class="active"><a href="/pristup_informacijama.aspx">Pristup informacijama</a></li>
+      <li><a href="/pristup_informacijama.aspx">Pristup informacijama</a></li>
       <li><a href="/zivot_u_domu.aspx" title="smještaj učenika i svakodnevne aktivnosti">Život u domu</a>
         <ul class="menu vertical nested">
           <li><a href="#">Item One-one</a></li>
@@ -76,14 +77,14 @@
       </div>
   <!-- Logo -->
   <a href="/">{{>svg_logo}}</a>
-   <p id="time">ponedjeljak, 6.3.2017.</p>
+   <p id="time">{{datum}}</p> 
  </header>
 
     {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
     {{> body}}
 
     <footer>
-      <div class="search-form" class="row collapse">
+      <div class="search-form row collapse">
         <div class="large-8 small-9 columns">
           <input type="text" placeholder="Pretraži stranice">
         </div>

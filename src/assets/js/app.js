@@ -7,9 +7,7 @@ var resizeFixedLeftMenu = function() {
 	$('#left-menu').css('width', fixedWidth);
 };
 resizeFixedLeftMenu();
-// debounce plugin https://www.npmjs.com/package/javascript-debounce
-// Had to be ignored by Babel plugin in gulpfile.babel.js
-window.addEventListener('resize', debounce(resizeFixedLeftMenu, 200));
+window.addEventListener('resize', resizeFixedLeftMenu);
 
 // Toggle mobile menu
 var toggle = document.getElementById("left-menu-toggle");
@@ -26,6 +24,8 @@ function isVisible() {
 	}
 }
 var heroImage = document.getElementById('hero-image');
+// debounce plugin https://www.npmjs.com/package/javascript-debounce
+// Had to be ignored by Babel plugin in gulpfile.babel.js
 window.addEventListener('scroll', debounce(isVisible, 200));
 
 // By Chris Coyier & tweaked by Mathias Bynens

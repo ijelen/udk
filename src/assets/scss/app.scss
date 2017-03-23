@@ -303,6 +303,8 @@ article {
 	}
 }
 
+.swipebox-title {font-family: 'Open Sans', sans-serif;}
+
 /* #vise-vijesti */
 #vise-vijesti {
 	margin-top: 3rem;
@@ -374,6 +376,51 @@ footer {
 	@media screen and #{breakpoint(medium)} {
 		display: none
 		}
+	}
+}
+
+/* #fotogalerija */
+
+#fotogalerija {
+	&::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	a {
+		display: block;
+		transition: all 1s;
+		outline_: 1px dashed green;
+		@media screen and #{breakpoint(medium)} {			
+			float: left;
+			width: 50%;
+		}
+	} 
+	a:hover {background-color: darken(#F1F0EC, 6%)}
+	a:nth-child(odd) {
+		@media screen and #{breakpoint(medium)} {
+			padding-right: .5rem;
+		}
+	}
+	a:nth-child(even) {
+		@media screen and #{breakpoint(medium)} {
+			padding-left: .5rem;
+		}
+	}
+	div.item {
+		background: bottom center no-repeat; 
+		background-size: contain;
+		width: 100%;
+		
+	}
+	div.item::before {
+		content: '';
+		display: block;
+		padding-top: 75%;
+		/* Fluid square with 3/4 ratio */
+	}
+	div p {
+		text-align: center;
 	}
 }
 
