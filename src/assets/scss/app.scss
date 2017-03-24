@@ -267,6 +267,10 @@ nav > ul.menu {margin-top: 2rem;}
 	background: $primary-color;
 	color: $white;
 }
+.menu > li.is-accordion-submenu-parent:hover > a::after {
+	border-color: $white transparent transparent;
+	transition: .5s all;
+}
 nav .button {display: block}
 
 /* #hero-image */
