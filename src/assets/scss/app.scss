@@ -83,6 +83,8 @@ h2 {
 	}	
 }
 
+a:active {transform: translateY(2px);}
+
 ::selection {
   background: $primary-color; /* WebKit/Blink Browsers */
   color: $white;
@@ -256,7 +258,6 @@ nav > ul.menu {margin-top: 2rem;}
 	@media screen and #{breakpoint(medium only)} {
 		font-size: .9rem;
 	}
-	&:active {position: relative; top: 1px}
 }
 .menu li {
 	padding: 1px 0 0 0;
@@ -414,6 +415,7 @@ footer {
 	a:hover div {
 		background-color: darken(#F1F0EC, 2%);
 		box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.32);
+		transform: scale(1.02);
 	}
 	a:nth-child(odd) {
 		@media screen and #{breakpoint(medium)} {
@@ -426,7 +428,7 @@ footer {
 		}
 	}
 	div {
-		transition: .5s all;
+		transition: .3s all ease-in;
 	}
 	div.item {
 		background: bottom center no-repeat; 
