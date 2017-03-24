@@ -149,6 +149,7 @@ a:active {transform: translateY(2px);}
 	background-origin: padding-box;
 	padding: 8px 0;
 	&:active {position: relative; top: 1px} 
+	&:hover {background-size: 100% 2px; background-position: center bottom 25%;};
 }
 
 
