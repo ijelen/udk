@@ -17,7 +17,7 @@ toggle.addEventListener("click", function() {
 
 // Attach class "enlarge" to hero-image when windows scrolls for 150px
 function isVisible() {
-	if (window.scrollY > 150) {
+	if (window.scrollY > 100) {
 		heroImage.className = 'enlarge';
 	} else {
 		heroImage.className = '';
