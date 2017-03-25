@@ -428,6 +428,7 @@ footer {
 		box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.32);
 		transform: scale(1.01);
 	}
+	a:hover div.item {border-top: 1px solid darken(#F1F0EC, 8%);}
 	a:nth-child(odd) {
 		@media screen and #{breakpoint(medium)} {
 			padding-right: .5rem;
@@ -445,6 +446,7 @@ footer {
 		background: bottom center no-repeat; 
 		background-size: contain;
 		width: 100%;
+		border-top: 1px solid #F1F0EC;
 		
 	}
 	div.item::before {
