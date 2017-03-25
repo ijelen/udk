@@ -63,6 +63,7 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
+$header-black: #504F4F;
 $body-font-family: 'Libre Baskerville', Georgia, serif;
 $menu-font-family: 'Open Sans', sans-serif;
 $body-antialiased: true;
@@ -109,7 +110,7 @@ $header-font-family: $menu-font-family;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
-$header-color: inherit;
+$header-color: $header-black;
 $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (

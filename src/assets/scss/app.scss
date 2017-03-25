@@ -227,6 +227,7 @@ header#glava {
 	}
 
 .title-bar-title {
+	font-family: $menu-font-family;
 	text-transform: uppercase; 
 	color: $white;
 	font-weight: normal; 
@@ -469,9 +470,23 @@ body.domski_filmovi article {
 	margin-bottom: 2rem;
 }
 body.kontakt {
-
+	h3 {display: none;}
 	#adresa {
-
+		background: url(../img/fi-marker.svg) top left no-repeat;
+		margin-top: 2rem;
 	}
+	#telefon {
+		background: url(../img/fi-telephone.svg) top left no-repeat;
+	}
+	#mail {
+		background: url(../img/fi-mail-contact-page.svg) top left no-repeat;
+	}
+	#adresa, #telefon, #mail {
+		padding-left: 10%;
+		padding-bottom: 1.5rem;
+		background-origin: padding-box;
+		background-size: 7%;
+	}
+	span {color: $dark-gray}
 }
 
