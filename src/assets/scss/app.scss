@@ -468,8 +468,8 @@ footer {
 		color: $meta-color;
 	}
 }
-body.fotogalerija header {margin-bottom: 1rem}
-body.domski_filmovi header {margin-bottom: 1rem}
+body.fotogalerija header, body.domski_filmovi header {margin-bottom: 1rem}
+body.o_domu header {margin-bottom: rem-calc(10);}
 body.domski_filmovi article {
 	margin-bottom: 2rem;
 }
