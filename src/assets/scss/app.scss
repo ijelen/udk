@@ -106,6 +106,9 @@ a:active {transform: translateY(2px);}
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
 	font-size: .9rem;
+	@media screen and #{breakpoint(small only)} {
+		font-size: .8rem;
+		}
 	.autor {
 		margin-left: .25rem
 	}
