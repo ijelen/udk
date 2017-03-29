@@ -217,6 +217,7 @@ header#glava {
 	transition: max-height 1s ease;
 	body.show-left-menu & {max-height: 100%}
 	/* Class that's applied for a second for a rare occasion that the menu isn't clicked but the window is scrolled*/
+	/* I used Headroom callback function to apply this class*/
 	&.quicklyHidden {
 		display: none;
 	}
@@ -287,9 +288,14 @@ nav > ul.menu {
 	font-family: $menu-font-family;
 }
 .menu > li > a {
-	line-height: 1.8;  
-	@media screen and #{breakpoint(medium only)} {
+	line-height: 1.8; 
+	@media screen and #{breakpoint(small only)} {
 		font-size: .9rem;
+		line-height: 1.5;
+	}
+	font-size: .9rem; 
+	@media screen and #{breakpoint(large)} {
+		font-size: 1rem;
 	}
 }
 .menu li {
@@ -523,5 +529,23 @@ body.kontakt {
 		background-size: 7%;
 	}
 	#mail span {color: $dark-gray}
+}
+
+body.radovi {
+	h3 {
+		font-family: $body-font-family;
+		font-weight: bold;
+		margin-bottom: 1rem;
+	}
+}
+.pjesma {
+	margin: 3rem 0 0 2rem;
+		@media screen and #{breakpoint(small only)} {
+		margin: 3rem 0 0 1rem;
+	}
+}
+.autor_pjesme {
+	font-style: italic;
+	margin-left: 8rem;
 }
 
