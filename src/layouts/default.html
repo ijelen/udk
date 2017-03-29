@@ -48,22 +48,25 @@
       <li{{#ifpage 'index'}} class="active"{{/ifpage}}><a href="/index.html">Naslovnica</a></li>
       <li{{#ifpage 'o_domu'}} class="active"{{/ifpage}}><a href="/o_domu.html">O domu</a></li>
       <li{{#ifpage 'fotogalerija'}} class="active"{{/ifpage}}><a href="/fotogalerija.html">Fotogalerija</a></li>
-      <li><a href="/dokumenti_doma.aspx">Dokumenti doma</a></li>
       <li{{#ifpage 'domski_filmovi'}} class="active"{{/ifpage}}><a href="/domski_filmovi.html">Domski filmovi</a></li>
-      <li><a href="/pristup_informacijama.aspx">Pristup informacijama</a></li>
-      <li><a href="/zivot_u_domu.aspx" title="smještaj učenika i svakodnevne aktivnosti">Život u domu</a>
+      <li><a href="" title="">Dokumenti</a>
         <ul class="menu vertical nested">
-          <li><a href="#">Item One-one</a></li>
-          <li><a href="#">Item One-two</a></li>
-          <li><a href="#">Item One-three</a></li>
+          <li><a href="#">Dokumenti doma</a></li>
+          <li><a href="#">Zaključci sjednica Domskog odbora</a></li>
+          <li><a href="#">Pristup informacijama</a></li>
+          <li><a href="#">Javna nabava</a></li>
+          <li><a href="#">Natječaji</a></li>
         </ul></li>
       <li><a href="/djelatnici.aspx" title="popis djelatnika">Djelatnici</a></li>
       <li><a href="/odgojne_skupine.aspx" title="popis odgojnih skupina u Domu">Odgojne skupine</a></li>
       <li><a href="/slobodne_aktivnosti.aspx" title="popis grupa koje se nude učenicima">Slobodne aktivnosti</a></li>
       <li><a href="/posebni_programi.aspx" title="popis posebnih programa">Posebni programi</a></li>
       <li><a href="/domijade.aspx" title="videosnimke s domijada">Domijade</a></li>
-      <li><a href="/javna_nabava.aspx">Javna nabava</a></li>
-      <li><a href="/natjecaji.aspx">Natječaji</a></li>
+      <li><a href="" title="">Križevci</a>
+        <ul class="menu vertical nested">
+          <li><a href="#">Povijest grada</a></li>
+          <li><a href="#">Srednje škole</a></li>
+        </ul></li>
     </ul>
   </nav>
   </div>
@@ -77,7 +80,7 @@
       </div>
   <!-- Logo -->
   <a href="/">{{>svg_logo}}</a>
-   <p id="time">{{datum}}</p> 
+   <p id="time">{{datum}}<span id="vrijeme"><span id="vrijeme_celzijusa"></span><span id="vrijeme_opis"></span><img id="vrijeme_ikona" src=""></span></p> 
  </header>
 
     {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}

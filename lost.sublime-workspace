@@ -4,12 +4,56 @@
 		"selected_items":
 		[
 			[
-				"back",
-				"background-color"
+				"pa",
+				"parsed_json"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"background",
+				"background-size"
+			],
+			[
+				"menu",
+				"menu-font-family"
+			],
+			[
+				"bo",
+				"border-color"
+			],
+			[
+				"i",
+				"italic"
 			],
 			[
 				"font",
-				"font-family"
+				"font-style"
+			],
+			[
+				"tra",
+				"translateY()"
+			],
+			[
+				"trans",
+				"transform"
+			],
+			[
+				"te",
+				"text-shadow"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"border-",
+				"border-bottom-left-radius"
+			],
+			[
+				"back",
+				"background-color"
 			],
 			[
 				"left",
@@ -18,10 +62,6 @@
 			[
 				"z",
 				"z-index"
-			],
-			[
-				"padd",
-				"padding-right"
 			],
 			[
 				"no",
@@ -36,10 +76,6 @@
 				"margin-bottom"
 			],
 			[
-				"ba",
-				"background-color"
-			],
-			[
 				"text",
 				"text-align"
 			],
@@ -48,16 +84,8 @@
 				"classList"
 			],
 			[
-				"tra",
-				"transition-duration"
-			],
-			[
 				"add",
 				"addEventListener"
-			],
-			[
-				"i",
-				"inherit"
 			],
 			[
 				"max",
@@ -66,14 +94,6 @@
 			[
 				"small",
 				"small-3"
-			],
-			[
-				"te",
-				"text-align"
-			],
-			[
-				"bo",
-				"border"
 			],
 			[
 				"border-radius",
@@ -94,10 +114,6 @@
 			[
 				"c",
 				"center"
-			],
-			[
-				"background",
-				"background-color"
 			],
 			[
 				"sp",
@@ -232,10 +248,6 @@
 				"background-color"
 			],
 			[
-				"pa",
-				"padding-left"
-			],
-			[
 				"bi",
 				"border-image"
 			],
@@ -308,28 +320,38 @@
 	"buffers":
 	[
 		{
-			"file": "src/data/global.yml",
+			"file": "src/assets/scss/app.scss",
 			"settings":
 			{
-				"buffer_size": 452,
+				"buffer_size": 12458,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/Users/igorj/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+			"file": "src/layouts/default.html",
 			"settings":
 			{
-				"buffer_size": 736,
+				"buffer_size": 4196,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/pages/fotogalerija.html",
+			"file": "src/pages/o_domu.html",
 			"settings":
 			{
-				"buffer_size": 4452,
+				"buffer_size": 2513,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "<p> U 140 godina staroj zgradi bivšeg Visokog gosp"
+			}
+		},
+		{
+			"file": "src/pages/kontakt.html",
+			"settings":
+			{
+				"buffer_size": 538,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -338,7 +360,16 @@
 			"file": "src/assets/js/app.js",
 			"settings":
 			{
-				"buffer_size": 2549,
+				"buffer_size": 2940,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/pages/fotogalerija.html",
+			"settings":
+			{
+				"buffer_size": 618,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -351,10 +382,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 323.0,
-		"last_filter": "insta",
+		"height": 342.0,
+		"last_filter": "css",
 		"selected_items":
 		[
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
 			[
 				"insta",
 				"Package Control: Install Package"
@@ -415,17 +450,32 @@
 	[
 		"/C/Users/igorj/Dropbox/web/Lost",
 		"/C/Users/igorj/Dropbox/web/Lost/src",
-		"/C/Users/igorj/Dropbox/web/Lost/src/helpers",
+		"/C/Users/igorj/Dropbox/web/Lost/src/assets/img",
+		"/C/Users/igorj/Dropbox/web/Lost/src/assets/scss",
+		"/C/Users/igorj/Dropbox/web/Lost/src/layouts",
 		"/C/Users/igorj/Dropbox/web/Lost/src/pages",
 		"/C/Users/igorj/Dropbox/web/Lost/src/partials"
 	],
 	"file_history":
 	[
-		"/C/Users/igorj/Dropbox/web/Lost/dist/novost.html",
+		"/C/Users/igorj/Dropbox/web/Lost/src/assets/scss/_settings.scss",
+		"/C/Users/igorj/Dropbox/web/Lost/config.yml",
+		"/C/Users/igorj/Dropbox/web/Lost/src/assets/img/fi-telephone.svg",
+		"/C/Users/igorj/Dropbox/web/Lost/src/assets/img/fi-marker.svg",
+		"/C/Users/igorj/Dropbox/web/Lost/src/assets/img/fi-mail-contact-page.svg",
 		"/C/Users/igorj/Dropbox/web/Lost/src/pages/index.html",
 		"/C/Users/igorj/Dropbox/web/Lost/src/layouts/default.html",
-		"/C/Users/igorj/Dropbox/web/Lost/src/assets/scss/app.scss",
+		"/C/Users/igorj/Dropbox/web/Lost/src/pages/domski_filmovi.html",
+		"/C/Users/igorj/AppData/Roaming/Sublime Text 3/Packages/User/ColorHighlighter.sublime-settings",
+		"/C/Users/igorj/Desktop/UDK redizajn/foundation-icons/foundation-icons/svgs/fi-marker.svg",
+		"/C/Users/igorj/Dropbox/web/Lost/src/partials/fi-marker.html",
+		"/C/Users/igorj/Desktop/UDK redizajn/foundation-icons/foundation-icons/svgs/fi-telephone.svg",
+		"/C/Users/igorj/Dropbox/web/Lost/src/partials/fi-telephone.html",
+		"/C/Users/igorj/Dropbox/web/Lost/src/data/global.yml",
 		"/C/Users/igorj/Dropbox/web/Lost/src/helpers/datum.js",
+		"/C/Users/igorj/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+		"/C/Users/igorj/Dropbox/web/Lost/dist/novost.html",
+		"/C/Users/igorj/Dropbox/web/Lost/src/assets/scss/app.scss",
 		"/C/Users/igorj/Dropbox/web/Lost/gulpfile.babel.js",
 		"/C/Users/igorj/Dropbox/web/Lost/src/pages/fotoalbum.html",
 		"/C/Users/igorj/Dropbox/web/Lost/src/data/fotogalerija.json",
@@ -490,7 +540,6 @@
 		"/C/Users/igorj/projects/React/build/main.js",
 		"/C/Users/igorj/projects/React/css/style.styl",
 		"/C/Users/igorj/projects/Flex/scripts/main.js",
-		"/C/Users/igorj/AppData/Roaming/Sublime Text 3/Packages/User/ColorHighlighter.sublime-settings",
 		"/C/Users/igorj/projects/LyndaCreatingRWD/css/print.css",
 		"/C/Users/igorj/projects/events/index.html",
 		"/C/Users/igorj/Desktop/Lynda - Creating a Responsive Web Design/Exercise Files/Ch01/01_01/snippets/section_content.html",
@@ -553,6 +602,30 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Kontakt",
+			"menu",
+			"url",
+			"time",
+			"$body-font-family",
+			"libre",
+			"position: relative; top: 1px",
+			"libre",
+			"positi",
+			"scale",
+			"F1F0EC;",
+			"#F1F0EC",
+			"F1F0EC",
+			"#4d4ea1",
+			"4d4ea1",
+			"a {",
+			"body",
+			"transiti",
+			"drop",
+			"$global-radius",
+			"radius",
+			"border",
+			"meta",
+			"5.",
 			"\"",
 			"pages",
 			"panini",
@@ -656,21 +729,7 @@
 			"logo",
 			"script",
 			"nav::",
-			"section.h",
-			"atmos",
-			"12-19",
-			"20-21",
-			"2016-12",
-			"hello",
-			"HostsUpdater",
-			"tot",
-			"urlovi",
-			"09-30",
-			"10-03",
-			"2016-10-03",
-			"jesenj",
-			"gray",
-			"header"
+			"section.h"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -678,6 +737,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"$background-color",
+			"$primary-color",
 			"",
 			"03-21",
 			"03-11",
@@ -716,87 +777,90 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/data/global.yml",
+					"file": "src/assets/scss/app.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 452,
+						"buffer_size": 12458,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								452,
-								452
+								11945,
+								11945
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
-							"syntax": "Packages/YAML/YAML.sublime-syntax"
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 8171.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/layouts/default.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4196,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1946,
+								1946
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 540.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "/C/Users/igorj/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 736,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								480,
-								480
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
 					"buffer": 2,
-					"file": "src/pages/fotogalerija.html",
+					"file": "src/pages/o_domu.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4452,
+						"buffer_size": 2513,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3,
-								3
+								40,
+								40
 							]
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
+							"auto_name": "<p> U 140 godina staroj zgradi bivšeg Visokog gosp",
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -810,19 +874,50 @@
 				},
 				{
 					"buffer": 3,
-					"file": "src/assets/js/app.js",
+					"file": "src/pages/kontakt.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2549,
+						"buffer_size": 538,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								813,
-								813
+								109,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/assets/js/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2940,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2039,
+								2039
 							]
 						],
 						"settings":
@@ -832,10 +927,41 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
+						"translation.y": 1026.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/pages/fotogalerija.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 618,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								52,
+								52
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]

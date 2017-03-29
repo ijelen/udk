@@ -78,3 +78,23 @@ headroom.init();
 
 // Fire Swipebox
 $('.swipebox').swipebox();
+
+var vrijeme_celzijusa = document.getElementById('vrijeme_celzijusa');
+var vrijeme_opis = document.getElementById('vrijeme_opis');
+var vrijeme_ikona = document.getElementById('vrijeme_ikona');
+
+function getWeather() {
+  $.ajax({
+  url : "http://www.vrtuljak.com/wunderground_jsonp.php",
+  dataType : "jsonp",
+  jsonpCallback : "mojCallBack",
+  success : function(parsed_json) {
+	  vrijeme_celzijusa.textContent = Math.round(parsed_json.current_observation.temp_c) + ' °C';
+	  vrijeme_opis.textContent = parsed_json.current_observation.weather.toLowerCase();
+	  vrijeme_ikona.src = parsed_json.current_observation.icon_url.replace('/i/c/k/', '/i/c/i/');
+  }
+  });
+}
+getWeather();
+// Call weather every 15 minutes
+setInterval(getWeather, 1000*60*15);

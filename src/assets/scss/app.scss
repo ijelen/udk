@@ -91,6 +91,15 @@ a:active {transform: translateY(2px);}
   color: $white;
 }
 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to { 
+    transform: rotate(360deg);
+  }
+}
+
 .meta {
 	color: $meta-color; 
 	margin-bottom: .5rem; 
@@ -152,7 +161,24 @@ a:active {transform: translateY(2px);}
 header#glava {
 	font-family: $menu-font-family;
 	p {
-		border-top: solid 3px $primary-color;
+		border-top: solid 2px $primary-color;
+		position: relative;
+	}
+	p span#vrijeme {
+		position: absolute; 
+		right: 0; 
+		top: 0;
+	}
+	#vrijeme_celzijusa {margin-right: rem-calc(7); letter-spacing: -1px}
+	#vrijeme_opis {margin-right: rem-calc(5)}
+	#vrijeme_ikona {
+		max-width: rem-calc(22);
+		margin-right: -3px;
+	}
+	img {transition: 1s all; filter: grayscale(50%);}
+	img[src="http://icons.wxug.com/i/c/i/clear.gif"]:hover {
+		transform: scale(1.2);
+		animation: rotate 1s linear;
 	}
 	#kontakt {
 		position: absolute;
@@ -258,10 +284,7 @@ nav > ul.menu {
 	font-family: $menu-font-family;
 }
 .menu > li > a {
-	line-height: 1.8; 
-	@media screen and #{breakpoint(medium)} {
-		text-transform: uppercase;
-	} 
+	line-height: 1.8;  
 	@media screen and #{breakpoint(medium only)} {
 		font-size: .9rem;
 	}
@@ -491,6 +514,6 @@ body.kontakt {
 		background-origin: padding-box;
 		background-size: 7%;
 	}
-	span {color: $dark-gray}
+	#mail span {color: $dark-gray}
 }
 
