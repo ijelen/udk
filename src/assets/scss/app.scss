@@ -264,7 +264,7 @@ header#glava {
 	padding: 0 .5em; 
 	justify-content: space-between; 
 	align-items: center; 
-	height: 3em; 
+	height: 3rem; 
 	background-color: $primary-color;
 	position: fixed;
 	width: 100%;
@@ -311,7 +311,7 @@ header#glava {
 }
 
 nav > ul.menu {
-	margin-top: 2rem;
+	margin-top: 1.4rem;
 	font-family: $menu-font-family;
 }
 .menu > li > a {
