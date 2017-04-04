@@ -535,7 +535,7 @@ footer {
 	}
 }
 body.fotogalerija header, body.domski_filmovi header {margin-bottom: 1rem}
-body.o_domu, body.djelatnici {
+body.o_domu, body.djelatnici, body.odgojne_skupine {
 	header {
 		margin-bottom: rem-calc(10);
 	}
@@ -561,6 +561,23 @@ body.domski_filmovi {
 		}
 	}
 }
+body.odgojne_skupine {
+	@media screen and #{breakpoint(medium)} {
+		article {
+			float: left;
+			width: 50%;
+			margin-top: 1rem;
+			}
+		article:nth-child(even) {padding-right: .5rem;}
+		article:nth-child(odd) {padding-left: .5rem;}
+		div:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+	}
+}
+
 body.kontakt {
 	h3 {display: none;}
 	#adresa {
