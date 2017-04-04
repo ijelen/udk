@@ -63,7 +63,14 @@ body {
 	color: #333; 
 	font-family: $body-font-family;
 	font-weight: 400;
+	@media screen and #{breakpoint(medium only)} {
+		background-color: $background-color;
+		}
+	@media screen and #{breakpoint(small only)} {
+			font-size: .9rem;
+		}
 }
+
 h1 {
 	margin-bottom: 0
 }
@@ -79,6 +86,7 @@ h2 {
 		color: $primary-color;
 	}	
 }
+h3 {font-weight: bold}
 
 a:active {transform: translateY(2px);}
 
@@ -120,13 +128,15 @@ a:active {transform: translateY(2px);}
 }
 
 #main {
-	padding: 0 2rem;
+	padding: 1rem 1rem 0;
 	@media screen and #{breakpoint(small only)} {
 		body.show-left-menu & {filter: blur(1px);}
-		padding-top: 2rem;
 		}
 	@media screen and #{breakpoint(medium only)} {
 		padding: 0 1rem;
+		}
+	@media screen and #{breakpoint(large)} {
+		padding: 0 2rem;
 		}
 	background: $background-color;
 	min-height: 100vh;
@@ -138,9 +148,12 @@ a:active {transform: translateY(2px);}
 	width: 55%; 
 	margin: 3.3rem 0 0 0;
 	@media screen and #{breakpoint(medium only)} {
-		margin-top: 2.8rem;
+		margin-top: 2.6rem;
 		}
 }
+ @media screen and (min-width: 40rem) and (max-width: 47rem) {
+	#main svg.logo {width: 59%}
+ }
 
 #main header#glava {
 	position: relative;
@@ -158,7 +171,7 @@ a:active {transform: translateY(2px);}
 	background-origin: padding-box;
 	padding: 8px 0;
 	&:active {position: relative; top: 1px} 
-	&:hover {background-size: 100% 2px; background-position: center bottom 25%;};
+	&:hover {background-size: 100% 2px; background-position: center bottom 25%;}
 }
 
 header#glava {
@@ -166,6 +179,9 @@ header#glava {
 	p {
 		border-top: solid 2px $primary-color;
 		position: relative;
+		@media screen and #{breakpoint(medium only)} {
+			font-size: .9rem;
+		}
 	}
 	p span#vrijeme {
 		position: absolute; 
@@ -175,13 +191,16 @@ header#glava {
 	#vrijeme_celzijusa {margin-right: rem-calc(7); letter-spacing: -1px}
 	#vrijeme_opis {margin-right: rem-calc(5)}
 	#vrijeme_ikona {
-		max-width: rem-calc(22);
+		max-width: rem-calc(20);
 		margin-right: -3px;
 	}
-	img {transition: 1s all; filter: grayscale(50%);}
+	img {transition: 1s all; filter: sepia(80%)  brightness(90%);}
 	img[src="http://icons.wxug.com/i/c/i/clear.gif"]:hover {
 		transform: scale(1.2);
 		animation: rotate 1s linear;
+	}
+	img[src="http://icons.wxug.com/i/c/i/nt_clear.gif"]:hover {
+		animation: rotate .5s linear;
 	}
 	#kontakt {
 		position: absolute;
@@ -214,6 +233,7 @@ header#glava {
 	z-index: 10;
 	max-height: 0;
 	overflow: hidden;
+	will-change: max-height;
 	transition: max-height 1s ease;
 	body.show-left-menu & {max-height: 100%}
 	/* Class that's applied for a second for a rare occasion that the menu isn't clicked but the window is scrolled*/
@@ -224,9 +244,15 @@ header#glava {
 	@media screen and #{breakpoint(medium)} {
 		/*min-height always overrides max-height*/
  		min-height: 100%; 
+ 		max-height: inherit;
   		box-shadow: none;
   		top: initial;
-  		overflow: initial;
+  		position: static;
+  		overflow: initial; 
+	}
+	@media screen and #{breakpoint(large)} {
+		/*min-height always overrides max-height*/
+  		position: fixed;
 	}
 }
 
@@ -333,13 +359,10 @@ nav .button {display: block}
 #search-form {margin-top: 1rem}
 
 /* article */
-article {
+article, section {
 	margin-bottom: 1rem;
-	p {
-		@media screen and #{breakpoint(small only)} {
-			font-size: .9rem;
-		}
-	}
+	margin-top: 2.5rem;
+	h2 {margin-top: 0;}
 	figure {margin-bottom: 1rem}
 	
 	.photos {
@@ -463,7 +486,7 @@ footer {
 	a:hover div {
 		background-color: darken(#F1F0EC, 2%);
 		box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.32);
-		transform: scale(1.01);
+		transform_: scale(1.01);
 	}
 	a:hover div.item {border-top: 1px solid darken(#F1F0EC, 8%);}
 	a:nth-child(odd) {
@@ -477,7 +500,7 @@ footer {
 		}
 	}
 	div {
-		transition: .3s all ease-in;
+		transition_: .3s all ease-in;
 	}
 	div.item {
 		background: bottom center no-repeat; 
@@ -497,6 +520,11 @@ footer {
 		padding: .2rem;
 		border-bottom-left-radius: $global-radius;
 		border-bottom-right-radius: $global-radius;
+		p {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
 	}
 	div p {
 		text-align: center;
@@ -506,9 +534,19 @@ footer {
 	}
 }
 body.fotogalerija header, body.domski_filmovi header {margin-bottom: 1rem}
-body.o_domu header {margin-bottom: rem-calc(10);}
+body.o_domu {
+	header {
+		margin-bottom: rem-calc(10);
+	}
+	.photos {
+		margin-bottom: 1rem;
+	}
+}
 body.domski_filmovi article {
 	margin-bottom: 2rem;
+}
+body.domski_filmovi article:nth-child(2) {
+	margin-top: 0;
 }
 body.kontakt {
 	h3 {display: none;}
@@ -541,11 +579,23 @@ body.radovi {
 .pjesma {
 	margin: 3rem 0 0 2rem;
 		@media screen and #{breakpoint(small only)} {
-		margin: 3rem 0 0 1rem;
+		margin: 3rem 0 0 0;
 	}
 }
 .autor_pjesme {
 	font-style: italic;
 	margin-left: 8rem;
+}
+
+article.obavijest {
+	padding: 1rem 1rem .3rem 1rem;
+	border-top_: 1px solid darken($background-color, 10%);
+	border-bottom_: 1px solid darken($background-color, 10%);
+	border-radius: $global-radius;
+	background-color: darken($background-color, 5%);
+	.autor_obavijest {
+		text-align: right;
+		font-style: italic;
+	}
 }
 

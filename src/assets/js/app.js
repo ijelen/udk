@@ -77,7 +77,7 @@ var headroom  = new Headroom(titleBar);
 headroom.init();
 
 // Fire Swipebox
-$('.swipebox').swipebox(removeBarsOnMobile : false);
+$('.swipebox').swipebox();
 
 var vrijeme_celzijusa = document.getElementById('vrijeme_celzijusa');
 var vrijeme_opis = document.getElementById('vrijeme_opis');

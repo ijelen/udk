@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-size"
+			],
+			[
+				"m",
+				"max-height"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"vrijeme",
+				"vrijeme_ikona"
+			],
+			[
+				"temp",
+				"temp_c"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"te",
+				"temp_c"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"padding",
+				"padding-right"
+			],
+			[
 				"pa",
 				"parsed_json"
 			],
@@ -28,20 +80,12 @@
 				"italic"
 			],
 			[
-				"font",
-				"font-style"
-			],
-			[
 				"tra",
 				"translateY()"
 			],
 			[
 				"trans",
 				"transform"
-			],
-			[
-				"te",
-				"text-shadow"
 			],
 			[
 				"ba",
@@ -52,10 +96,6 @@
 				"border-bottom-left-radius"
 			],
 			[
-				"back",
-				"background-color"
-			],
-			[
 				"left",
 				"left-menu"
 			],
@@ -64,16 +104,8 @@
 				"z-index"
 			],
 			[
-				"no",
-				"nowrap"
-			],
-			[
 				"resi",
 				"resizeFixedLeftMenu"
-			],
-			[
-				"margin",
-				"margin-bottom"
 			],
 			[
 				"text",
@@ -86,10 +118,6 @@
 			[
 				"add",
 				"addEventListener"
-			],
-			[
-				"max",
-				"max-height"
 			],
 			[
 				"small",
@@ -142,10 +170,6 @@
 			[
 				"ored",
 				"orderTotal"
-			],
-			[
-				"a",
-				"addToOrder"
 			],
 			[
 				"bu",
@@ -323,7 +347,16 @@
 			"file": "src/assets/scss/app.scss",
 			"settings":
 			{
-				"buffer_size": 12458,
+				"buffer_size": 13857,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/pages/novost.html",
+			"settings":
+			{
+				"buffer_size": 3928,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -332,26 +365,7 @@
 			"file": "src/layouts/default.html",
 			"settings":
 			{
-				"buffer_size": 4196,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/pages/o_domu.html",
-			"settings":
-			{
-				"buffer_size": 2513,
-				"encoding": "UTF-8",
-				"line_ending": "Windows",
-				"name": "<p> U 140 godina staroj zgradi bivšeg Visokog gosp"
-			}
-		},
-		{
-			"file": "src/pages/kontakt.html",
-			"settings":
-			{
-				"buffer_size": 538,
+				"buffer_size": 4437,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -360,16 +374,16 @@
 			"file": "src/assets/js/app.js",
 			"settings":
 			{
-				"buffer_size": 2940,
+				"buffer_size": 3309,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/pages/fotogalerija.html",
+			"file": "src/pages/ucenicki_radovi.html",
 			"settings":
 			{
-				"buffer_size": 618,
+				"buffer_size": 2398,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -450,21 +464,27 @@
 	[
 		"/C/Users/igorj/Dropbox/web/Lost",
 		"/C/Users/igorj/Dropbox/web/Lost/src",
-		"/C/Users/igorj/Dropbox/web/Lost/src/assets/img",
+		"/C/Users/igorj/Dropbox/web/Lost/src/assets",
 		"/C/Users/igorj/Dropbox/web/Lost/src/assets/scss",
+		"/C/Users/igorj/Dropbox/web/Lost/src/helpers",
 		"/C/Users/igorj/Dropbox/web/Lost/src/layouts",
-		"/C/Users/igorj/Dropbox/web/Lost/src/pages",
-		"/C/Users/igorj/Dropbox/web/Lost/src/partials"
+		"/C/Users/igorj/Dropbox/web/Lost/src/pages"
 	],
 	"file_history":
 	[
 		"/C/Users/igorj/Dropbox/web/Lost/src/assets/scss/_settings.scss",
+		"/C/Users/igorj/Dropbox/web/Lost/src/pages/kontakt.html",
+		"/C/Users/igorj/Dropbox/web/Lost/src/pages/o_domu.html",
+		"/C/Users/igorj/Dropbox/web/Lost/src/layouts/default.html",
+		"/C/Users/igorj/Dropbox/web/Lost/src/pages/index.html",
+		"/C/Users/igorj/Dropbox/web/Lost/.gitignore",
+		"/C/Users/igorj/Dropbox/web/Lost/src/pages/fotogalerija.html",
+		"/C/Users/igorj/Desktop/cache.php",
+		"/C/Users/igorj/Desktop/wunderground_jsonp.php",
 		"/C/Users/igorj/Dropbox/web/Lost/config.yml",
 		"/C/Users/igorj/Dropbox/web/Lost/src/assets/img/fi-telephone.svg",
 		"/C/Users/igorj/Dropbox/web/Lost/src/assets/img/fi-marker.svg",
 		"/C/Users/igorj/Dropbox/web/Lost/src/assets/img/fi-mail-contact-page.svg",
-		"/C/Users/igorj/Dropbox/web/Lost/src/pages/index.html",
-		"/C/Users/igorj/Dropbox/web/Lost/src/layouts/default.html",
 		"/C/Users/igorj/Dropbox/web/Lost/src/pages/domski_filmovi.html",
 		"/C/Users/igorj/AppData/Roaming/Sublime Text 3/Packages/User/ColorHighlighter.sublime-settings",
 		"/C/Users/igorj/Desktop/UDK redizajn/foundation-icons/foundation-icons/svgs/fi-marker.svg",
@@ -579,12 +599,7 @@
 		"/C/Users/igorj/projects/starter-web/hipster.txt",
 		"/C/Users/igorj/projects/starter-web/doomed.txt",
 		"/C/Users/igorj/Desktop/wp/wordpress-vvv/Vagrantfile",
-		"/C/Users/igorj/Desktop/homestead_improved/after.sh",
-		"/C/Users/igorj/Desktop/foundation/Treci/src/pages/index.html",
-		"/C/Users/igorj/homestead_improved/Project/public/index.php",
-		"/C/Users/igorj/Desktop/UDK/fotogalerija.aspx",
-		"/C/Users/igorj/Desktop/foundation/Treci/dist/styleguide.html",
-		"/C/Users/igorj/Desktop/foundation/Treci/gulpfile.babel.js"
+		"/C/Users/igorj/Desktop/homestead_improved/after.sh"
 	],
 	"find":
 	{
@@ -602,6 +617,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"menu",
+			"autor",
+			"font-family",
+			"menu",
+			"w_200,h_200",
+			"text",
+			"no-re",
+			"time",
+			"ponedj",
 			"Kontakt",
 			"menu",
 			"url",
@@ -720,16 +744,7 @@
 			"Order",
 			"Header",
 			"header",
-			"Header",
-			"header",
-			"Header",
-			"menu",
-			"stylus",
-			"section.main",
-			"logo",
-			"script",
-			"nav::",
-			"section.h"
+			"Header"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -737,6 +752,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"autor_pjesme",
+			"w_400,h_400",
 			"$background-color",
 			"$primary-color",
 			"",
@@ -777,7 +794,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -786,15 +803,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12458,
+						"buffer_size": 13857,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11945,
-								11945
+								3893,
+								3893
 							]
 						],
 						"settings":
@@ -804,89 +821,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 8171.0,
+						"translation.y": 6100.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/layouts/default.html",
+					"file": "src/pages/novost.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4196,
+						"buffer_size": 3928,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1946,
-								1946
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 540.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/pages/o_domu.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2513,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								40,
-								40
-							]
-						],
-						"settings":
-						{
-							"auto_name": "<p> U 140 godina staroj zgradi bivšeg Visokog gosp",
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/pages/kontakt.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 538,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								109,
-								0
+								2518,
+								2255
 							]
 						],
 						"settings":
@@ -904,20 +859,51 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "src/assets/js/app.js",
+					"buffer": 2,
+					"file": "src/layouts/default.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2940,
+						"buffer_size": 4437,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2039,
-								2039
+								2061,
+								2061
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 594.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/assets/js/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3309,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2937,
+								2937
 							]
 						],
 						"settings":
@@ -930,24 +916,24 @@
 						"translation.y": 1026.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "src/pages/fotogalerija.html",
+					"buffer": 4,
+					"file": "src/pages/ucenicki_radovi.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 618,
+						"buffer_size": 2398,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								52,
-								52
+								2350,
+								2355
 							]
 						],
 						"settings":
@@ -958,10 +944,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1299.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
