@@ -152,7 +152,7 @@ a:active {transform: translateY(2px);}
 		}
 }
  @media screen and (min-width: 40rem) and (max-width: 47rem) {
-	#main svg.logo {width: 59%}
+	#main svg.logo {width: 63%}
  }
 
 #main header#glava {
@@ -194,10 +194,11 @@ header#glava {
 		max-width: rem-calc(20);
 		margin-right: -3px;
 	}
-	img {transition: 1s all; filter: sepia(80%)  brightness(90%);}
+	img {transition: 1s all;}
 	img[src="http://icons.wxug.com/i/c/i/clear.gif"]:hover {
 		transform: scale(1.2);
 		animation: rotate 1s linear;
+		filter: sepia(80%)  brightness(90%);
 	}
 	img[src="http://icons.wxug.com/i/c/i/nt_clear.gif"]:hover {
 		animation: rotate .5s linear;
@@ -437,7 +438,7 @@ path {fill: $primary-color; transition: all .7s;}
 path:hover {fill: lighten($primary-color, 6%);}
 
 .pagination {
-	margin-top: 4rem;
+	margin-top: 3rem;
 	font-family: $menu-font-family;
 }
 
@@ -542,11 +543,23 @@ body.o_domu {
 		margin-bottom: 1rem;
 	}
 }
-body.domski_filmovi article {
-	margin-bottom: 2rem;
-}
-body.domski_filmovi article:nth-child(2) {
-	margin-top: 0;
+
+body.domski_filmovi {
+	article {margin-top: 0}
+	.pagination {margin-top: 2rem}
+	@media screen and #{breakpoint(medium)} {
+		article {
+			float: left;
+			width: 50%;
+			}
+		article:nth-child(even) {padding-right: .5rem;}
+		article:nth-child(odd) {padding-left: .5rem;}
+		section:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+	}
 }
 body.kontakt {
 	h3 {display: none;}

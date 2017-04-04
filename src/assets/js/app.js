@@ -32,9 +32,14 @@ window.addEventListener('scroll', debounce(isVisible, 200));
 // https://css-tricks.com/fluid-width-youtube-videos/
 $(function() {
 	// Find all YouTube videos
-	var $allVideos = $("iframe[src^='https://www.youtube.com']"),
+	var $allVideos = $("iframe[src^='https://www.youtube.com']")
 	    // The element that is fluid width
-	    $fluidEl = $("#main");
+    if ($("#yt").length) {
+    	var	$fluidEl = $("#yt");	
+    }
+    else {
+    	var $fluidEl = $("#main");	
+    }
 	// Figure out and save aspect ratio for each video
 	$allVideos.each(function() {
 		$(this)
