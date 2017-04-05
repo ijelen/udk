@@ -561,7 +561,8 @@ body.fotogalerija,
 body.domski_filmovi,
 body.zakljucci,
 body.dokumenti,
-body.pristup {
+body.pristup,
+body.javna_nabava {
 	header {margin-bottom: 1rem}
 }
 body.o_domu, 
@@ -665,5 +666,8 @@ body.zakljucci {
 	#main ul > li {
     	transform: rotate(-180deg);
 	}
+}
+body.javna_nabava {
+	li {margin-top: .3rem;}
 }
 

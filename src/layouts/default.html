@@ -50,12 +50,12 @@
       <li{{#ifpage 'fotogalerija'}} class="active"{{/ifpage}}><a href="fotogalerija.html">Fotogalerija</a></li>
       <li{{#ifpage 'domski_filmovi'}} class="active"{{/ifpage}}><a href="domski_filmovi.html">Domski filmovi</a></li>
       <li{{#ifpage 'ucenicki_radovi'}} class="active"{{/ifpage}}><a href="ucenicki_radovi.html">Učenički radovi</a></li>
-      <li{{#ifpage 'dokumenti_doma' 'zakljucci_sjednica' 'pristup_informacijama'}} class="active"{{/ifpage}}><a href="" title="">Dokumenti</a>
-        <ul class="menu vertical nested{{#ifpage 'dokumenti_doma' 'zakljucci_sjednica' 'pristup_informacijama'}} is-active{{/ifpage}}">
+      <li{{#ifpage 'dokumenti_doma' 'zakljucci_sjednica' 'pristup_informacijama' 'javna_nabava'}} class="active"{{/ifpage}}><a href="" title="">Dokumenti</a>
+        <ul class="menu vertical nested{{#ifpage 'dokumenti_doma' 'zakljucci_sjednica' 'pristup_informacijama' 'javna_nabava'}} is-active{{/ifpage}}">
           <li{{#ifpage 'dokumenti_doma'}} class="active"{{/ifpage}}><a href="dokumenti_doma.html">Dokumenti doma</a></li>
           <li{{#ifpage 'zakljucci_sjednica'}} class="active"{{/ifpage}}><a href="zakljucci_sjednica.html">Zaključci sjednica Domskog odbora</a></li>
           <li{{#ifpage 'pristup_informacijama'}} class="active"{{/ifpage}}><a href="pristup_informacijama.html">Pristup informacijama</a></li>
-          <li><a href="#">Javna nabava</a></li>
+          <li{{#ifpage 'javna_nabava'}} class="active"{{/ifpage}}><a href="javna_nabava.html">Javna nabava</a></li>
           <li><a href="#">Natječaji</a></li>
         </ul></li>
       <li{{#ifpage 'djelatnici'}} class="active"{{/ifpage}}><a href="djelatnici.html" title="popis djelatnika">Djelatnici</a></li>
