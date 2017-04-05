@@ -178,6 +178,18 @@ a:active {transform: translateY(2px);}
 	}
 }
 
+article.obavijest {
+	padding: 1rem 1rem .3rem 1rem;
+	border-top_: 1px solid darken($body-background, 10%);
+	border-bottom_: 1px solid darken($body-background, 10%);
+	border-radius: $global-radius;
+	background-color: darken($body-background, 5%);
+	.autor_obavijest {
+		text-align: right;
+		font-style: italic;
+	}
+}
+
 header#glava {
 	font-family: $menu-font-family;
 	p {
@@ -332,11 +344,6 @@ nav > ul.menu {
 .menu li {
 	padding: 1px 0 0 0;
 }
-
-.menu > li.is-accordion-submenu-parent:hover > a::after {
-	border-color: $white transparent transparent;
-	transition: .5s all;
-}
 .menu > li.active > a {
 	border-left: 4px solid $primary-color;
 	background: lighten($primary-color, 14%);
@@ -344,6 +351,10 @@ nav > ul.menu {
 }
 .menu > li:hover:not(.active) > a {
 	background: darken($body-background, 5%);
+}
+.menu li li > a {
+	padding-left: .5rem;
+	padding-right: .5rem;
 }
 nav .button {display: block}
 
@@ -543,10 +554,18 @@ footer {
 		color: $meta-color;
 	}
 }
-body.fotogalerija header, body.domski_filmovi header {margin-bottom: 1rem}
-body.o_domu, body.djelatnici, body.odgojne_skupine, body.dokumenti {
+
+body.fotogalerija, 
+body.domski_filmovi,
+body.zakljucci,
+body.dokumenti {
+	header {margin-bottom: 1rem}
+}
+body.o_domu, 
+body.djelatnici, 
+body.odgojne_skupine {
 	header {
-		margin-bottom: rem-calc(10);
+		margin-bottom: 1rem;
 	}
 	.photos {
 		margin-bottom: 1rem;
@@ -570,6 +589,7 @@ body.domski_filmovi {
 		}
 	}
 }
+
 body.odgojne_skupine {
 	@media screen and #{breakpoint(medium)} {
 		article {
@@ -586,6 +606,7 @@ body.odgojne_skupine {
 		}
 	}
 }
+
 body.dokumenti {
 	.tabs-title > a {font-family: $menu-font-family; font-size: .9rem}
 	ul#dokumenti {margin-top: 1.7rem}
@@ -593,6 +614,7 @@ body.dokumenti {
 	.tabs-panel li {margin-top: 4px;}
 	.tabs-content {border: 0;}
 }
+
 body.kontakt {
 	h3 {display: none;}
 	#adresa {
@@ -620,27 +642,25 @@ body.radovi {
 		font-weight: bold;
 		margin-bottom: 1rem;
 	}
-}
-.pjesma {
-	margin: 3rem 0 0 2rem;
+	.pjesma {
+		margin: 3rem 0 0 2rem;
 		@media screen and #{breakpoint(small only)} {
-		margin: 3rem 0 0 0;
+			margin: 3rem 0 0 0;
+		}
+	}
+	.autor_pjesme {
+		font-style: italic;
+		margin-left: 8rem;
 	}
 }
-.autor_pjesme {
-	font-style: italic;
-	margin-left: 8rem;
-}
 
-article.obavijest {
-	padding: 1rem 1rem .3rem 1rem;
-	border-top_: 1px solid darken($body-background, 10%);
-	border-bottom_: 1px solid darken($body-background, 10%);
-	border-radius: $global-radius;
-	background-color: darken($body-background, 5%);
-	.autor_obavijest {
-		text-align: right;
-		font-style: italic;
+body.zakljucci {
+	/*Cool hack to reverse the order*/
+	#main ul {
+    	transform: rotate(180deg);
+	}
+	#main ul > li {
+    	transform: rotate(-180deg);
 	}
 }
 
