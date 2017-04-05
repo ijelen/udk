@@ -562,7 +562,8 @@ body.domski_filmovi,
 body.zakljucci,
 body.dokumenti,
 body.pristup,
-body.javna_nabava {
+body.javna_nabava,
+body.natjecaji {
 	header {margin-bottom: 1rem}
 }
 body.o_domu, 
@@ -658,7 +659,7 @@ body.radovi {
 	}
 }
 
-body.zakljucci {
+body.zakljucci, body.natjecaji {
 	/*Cool hack to reverse the order*/
 	#main ul {
     	transform: rotate(180deg);
@@ -667,7 +668,8 @@ body.zakljucci {
     	transform: rotate(-180deg);
 	}
 }
-body.javna_nabava {
-	li {margin-top: .3rem;}
+body.javna_nabava,
+body.natjecaji {
+	#main li {margin-top: .3rem;}
 }
 
