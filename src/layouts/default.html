@@ -50,9 +50,9 @@
       <li{{#ifpage 'fotogalerija'}} class="active"{{/ifpage}}><a href="fotogalerija.html">Fotogalerija</a></li>
       <li{{#ifpage 'domski_filmovi'}} class="active"{{/ifpage}}><a href="domski_filmovi.html">Domski filmovi</a></li>
       <li{{#ifpage 'ucenicki_radovi'}} class="active"{{/ifpage}}><a href="ucenicki_radovi.html">Učenički radovi</a></li>
-      <li><a href="" title="">Dokumenti</a>
-        <ul class="menu vertical nested">
-          <li><a href="#">Dokumenti doma</a></li>
+      <li{{#ifpage 'dokumenti_doma'}} class="active"{{/ifpage}}><a href="" title="">Dokumenti</a>
+        <ul class="menu vertical nested{{#ifpage 'dokumenti_doma'}} is-active{{/ifpage}}">
+          <li{{#ifpage 'dokumenti_doma'}} class="active"{{/ifpage}}><a href="dokumenti_doma.html">Dokumenti doma</a></li>
           <li><a href="#">Zaključci sjednica Domskog odbora</a></li>
           <li><a href="#">Pristup informacijama</a></li>
           <li><a href="#">Javna nabava</a></li>

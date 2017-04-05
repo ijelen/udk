@@ -55,7 +55,6 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700');
 
 $meta-color: #777;
-$background-color: #F1F0EC;
 $text-color: #333;
 
 body {
@@ -64,7 +63,7 @@ body {
 	font-family: $body-font-family;
 	font-weight: 400;
 	@media screen and #{breakpoint(medium only)} {
-		background-color: $background-color;
+		background-color: $body-background;
 		}
 	@media screen and #{breakpoint(small only)} {
 			font-size: .9rem;
@@ -87,7 +86,10 @@ h2 {
 	}	
 }
 h3 {font-weight: bold}
-
+@media screen and (min-width: 40rem) and (max-width: 47rem) {
+	h2 {font-size: 1.9rem}
+	h3 {font-size: 1.4rem}
+ }
 a:active {transform: translateY(2px);}
 
 ::selection {
@@ -138,7 +140,7 @@ a:active {transform: translateY(2px);}
 	@media screen and #{breakpoint(large)} {
 		padding: 0 2rem;
 		}
-	background: $background-color;
+	background: $body-background;
 	min-height: 100vh;
 	border-top-right-radius: 6px;
 	border-bottom-right-radius: 6px;
@@ -151,7 +153,7 @@ a:active {transform: translateY(2px);}
 		margin-top: 2.6rem;
 		}
 }
- @media screen and (min-width: 40rem) and (max-width: 47rem) {
+@media screen and (min-width: 40rem) and (max-width: 47rem) {
 	#main svg.logo {width: 63%}
  }
 
@@ -161,17 +163,19 @@ a:active {transform: translateY(2px);}
 		display: none
 		}
 	}
-#main p a {
-	color: $text-color;
-	text-shadow: 3px 0 $background-color,2px 0 $background-color,1px 0 $background-color,-1px 0 $background-color,-2px 0 $background-color,-3px 0 $background-color;
-	background-image: linear-gradient($primary-color,$primary-color);
-	background-repeat: no-repeat;
-	background-size: 100% 1px;
-	background-position: center bottom 29%;
-	background-origin: padding-box;
-	padding: 8px 0;
-	&:active {position: relative; top: 1px} 
-	&:hover {background-size: 100% 2px; background-position: center bottom 25%;}
+#main section, #main article {
+	p a, li:not(.tabs-title) a {
+		color: $text-color;
+		text-shadow: 3px 0 $body-background,2px 0 $body-background,1px 0 $body-background,-1px 0 $body-background,-2px 0 $body-background,-3px 0 $body-background;
+		background-image: linear-gradient($primary-color,$primary-color);
+		background-repeat: no-repeat;
+		background-size: 100% 1px;
+		background-position: center bottom 29%;
+		background-origin: padding-box;
+		padding: 8px 0;
+		&:active {position: relative; top: 1px} 
+		&:hover {background-size: 100% 2px; background-position: center bottom 25%;}
+	}
 }
 
 header#glava {
@@ -227,7 +231,7 @@ header#glava {
 
 /* #left-menu */
 #left-menu {
-	background: $background-color;
+	background: $body-background;
 	top: 3rem;
 	position: fixed;
 	box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.32);
@@ -328,13 +332,18 @@ nav > ul.menu {
 .menu li {
 	padding: 1px 0 0 0;
 }
-.menu > li:hover > a {
-	background: $primary-color;
-	color: $white;
-}
+
 .menu > li.is-accordion-submenu-parent:hover > a::after {
 	border-color: $white transparent transparent;
 	transition: .5s all;
+}
+.menu > li.active > a {
+	border-left: 4px solid $primary-color;
+	background: lighten($primary-color, 14%);
+	color: $white;
+}
+.menu > li:hover:not(.active) > a {
+	background: darken($body-background, 5%);
 }
 nav .button {display: block}
 
@@ -535,7 +544,7 @@ footer {
 	}
 }
 body.fotogalerija header, body.domski_filmovi header {margin-bottom: 1rem}
-body.o_domu, body.djelatnici, body.odgojne_skupine {
+body.o_domu, body.djelatnici, body.odgojne_skupine, body.dokumenti {
 	header {
 		margin-bottom: rem-calc(10);
 	}
@@ -568,8 +577,8 @@ body.odgojne_skupine {
 			width: 50%;
 			margin-top: 1rem;
 			}
-		article:nth-child(even) {padding-right: .5rem;}
-		article:nth-child(odd) {padding-left: .5rem;}
+		article:nth-child(odd) {padding-right: .5rem;}
+		article:nth-child(even) {padding-left: .5rem;}
 		div:after {
 			content: '';
 			display: block;
@@ -577,7 +586,13 @@ body.odgojne_skupine {
 		}
 	}
 }
-
+body.dokumenti {
+	.tabs-title > a {font-family: $menu-font-family; font-size: .9rem}
+	ul#dokumenti {margin-top: 1.7rem}
+	.tabs-panel {padding: 1rem 0 0}
+	.tabs-panel li {margin-top: 4px;}
+	.tabs-content {border: 0;}
+}
 body.kontakt {
 	h3 {display: none;}
 	#adresa {
@@ -619,10 +634,10 @@ body.radovi {
 
 article.obavijest {
 	padding: 1rem 1rem .3rem 1rem;
-	border-top_: 1px solid darken($background-color, 10%);
-	border-bottom_: 1px solid darken($background-color, 10%);
+	border-top_: 1px solid darken($body-background, 10%);
+	border-bottom_: 1px solid darken($body-background, 10%);
 	border-radius: $global-radius;
-	background-color: darken($background-color, 5%);
+	background-color: darken($body-background, 5%);
 	.autor_obavijest {
 		text-align: right;
 		font-style: italic;
