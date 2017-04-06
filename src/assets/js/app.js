@@ -100,7 +100,7 @@ getWeather();
 // Call weather every 15 minutes
 setInterval(getWeather, 1000*60*15);
 
-
+// https://css-tricks.com/snippets/jquery/smooth-scrolling/
 // :not([href*="#panel-"]) is here because of tabs in dokumenti_doma.html
 $('a[href*="#"]:not([href*="#panel-"])').click(function() {
 if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
