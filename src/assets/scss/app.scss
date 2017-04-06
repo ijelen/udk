@@ -341,6 +341,10 @@ nav > ul.menu {
 		font-size: 1rem;
 	}
 }
+.menu > li.active > a::after {
+	border-color: $white transparent transparent;
+	transition: .5s all;
+}
 .menu li {
 	padding: 1px 0 0 0;
 }
@@ -659,7 +663,8 @@ body.radovi {
 	}
 }
 
-body.zakljucci, body.natjecaji {
+body.zakljucci,
+body.natjecaji {
 	/*Cool hack to reverse the order*/
 	#main ul {
     	transform: rotate(180deg);
