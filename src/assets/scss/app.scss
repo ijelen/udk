@@ -86,6 +86,10 @@ h2 {
 	}	
 }
 h3 {font-weight: bold}
+h4 {
+	font-weight: bold;
+	font-family: $body-font-family;
+}
 @media screen and (min-width: 40rem) and (max-width: 47rem) {
 	h2 {font-size: 1.9rem}
 	h3 {font-size: 1.4rem}
@@ -567,7 +571,8 @@ body.zakljucci,
 body.dokumenti,
 body.pristup,
 body.javna_nabava,
-body.natjecaji {
+body.natjecaji,
+body.slobodne_aktivnosti {
 	header {margin-bottom: 1rem}
 }
 body.o_domu, 
@@ -677,4 +682,5 @@ body.javna_nabava,
 body.natjecaji {
 	#main li {margin-top: .3rem;}
 }
+body.slobodne_aktivnosti #popis li {margin-top: .3rem;}
 

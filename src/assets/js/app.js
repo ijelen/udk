@@ -33,13 +33,9 @@ window.addEventListener('scroll', debounce(isVisible, 200));
 $(function() {
 	// Find all YouTube videos
 	var $allVideos = $("iframe[src^='https://www.youtube.com']")
-	    // The element that is fluid width
-    if ($("#yt").length) {
-    	var	$fluidEl = $("#yt");	
-    }
-    else {
-    	var $fluidEl = $("#main");	
-    }
+	// The element that is fluid width
+	// #yt is only on domski_filmovi.html, #main is default
+    var $fluidEl = $("#yt").length ? $("#yt") : $("#main");
 	// Figure out and save aspect ratio for each video
 	$allVideos.each(function() {
 		$(this)
@@ -103,3 +99,18 @@ function getWeather() {
 getWeather();
 // Call weather every 15 minutes
 setInterval(getWeather, 1000*60*15);
+
+
+// :not([href*="#panel-"]) is here because of tabs in dokumenti_doma.html
+$('a[href*="#"]:not([href*="#panel-"])').click(function() {
+if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+  var target = $(this.hash);
+  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+  if (target.length) {
+    $('html, body').animate({
+      scrollTop: target.offset().top
+    }, 1000);
+    return false;
+  }
+}
+});
