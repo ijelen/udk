@@ -646,6 +646,10 @@ body.kontakt {
 		padding-bottom: 1.5rem;
 		background-origin: padding-box;
 		background-size: 7%;
+		@media screen and #{breakpoint(small only)} {
+			padding-left: 13%;
+			background-size: 9%;
+		}
 	}
 	#mail span {color: $dark-gray}
 }
