@@ -572,7 +572,8 @@ body.dokumenti,
 body.pristup,
 body.javna_nabava,
 body.natjecaji,
-body.slobodne_aktivnosti {
+body.slobodne_aktivnosti,
+body.krizevci {
 	header {margin-bottom: 1rem}
 }
 body.o_domu, 
@@ -627,6 +628,7 @@ body.dokumenti {
 	.tabs-panel {padding: 1rem 0 0}
 	.tabs-panel li {margin-top: 4px;}
 	.tabs-content {border: 0;}
+	.tabs-title > a:active {transform: translateY(0);}
 }
 
 body.kontakt {
