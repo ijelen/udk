@@ -104,6 +104,7 @@ a:active {transform: translateY(2px);}
   background: $primary-color; /* Gecko Browsers */
   color: $white;
 }
+abbr {color: inherit}
 
 @keyframes rotate {
   from {
@@ -593,7 +594,8 @@ body.odgojne_skupine {
 body.domski_filmovi {
 	article {margin-top: 0}
 	.pagination {margin-top: 2rem}
-	@media screen and #{breakpoint(medium)} {
+	/* Tweak so there are two columns even on mobile if there's enough room */
+	@media screen and (min-width: 500px) {
 		article {
 			float: left;
 			width: 50%;
