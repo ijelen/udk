@@ -331,8 +331,11 @@ header#glava {
 }
 
 nav > ul.menu {
-	margin-top: 1.4rem;
+	margin-top: .3rem;
 	font-family: $menu-font-family;
+	@media screen and #{breakpoint(medium)} {
+		margin-top: 1.4rem;
+	}
 }
 .menu > li > a {
 	line-height: 1.8; 
@@ -606,7 +609,11 @@ body.domski_filmovi {
 }
 
 body.odgojne_skupine {
-	@media screen and #{breakpoint(medium)} {
+		article {
+			margin-top: 1rem;
+			}
+	/* Tweak so there are two columns even on mobile if there's enough room */
+	@media screen and (min-width: 500px) {
 		article {
 			float: left;
 			width: 50%;
@@ -614,7 +621,7 @@ body.odgojne_skupine {
 			}
 		article:nth-child(odd) {padding-right: .5rem;}
 		article:nth-child(even) {padding-left: .5rem;}
-		div:after {
+		#main div:after {
 			content: '';
 			display: block;
 			clear: both;
