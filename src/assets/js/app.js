@@ -68,6 +68,8 @@ var titleBar = document.querySelector("#title-bar");
 Headroom.options.onUnpin = function() {
 	if ($('#title-bar').is(":visible")) {
 		$('body').removeClass('show-left-menu');
+		// Remove outline on .menu-icon button on mobile
+		$('.menu-icon').blur();
 		// Hide the menu for a second for a rare occasion that it isn't clicked but the window is scrolled
 		var menu = document.getElementById('left-menu');
 		menu.style.display = "none";

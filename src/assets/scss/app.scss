@@ -149,7 +149,7 @@ abbr {color: inherit}
 	min-height: 100vh;
 	border-top-right-radius: 6px;
 	border-bottom-right-radius: 6px;
-	transition: filter 1s;
+	transition_: filter 1s;
 }
 #main svg.logo {
 	width: 55%; 
@@ -256,7 +256,7 @@ header#glava {
 	max-height: 0;
 	overflow: hidden;
 	will-change: max-height;
-	transition: max-height 1s ease;
+	transition_: max-height .5s ease;
 	body.show-left-menu & {max-height: 100%}
 	/* Class that's applied for a second for a rare occasion that the menu isn't clicked but the window is scrolled*/
 	/* I used Headroom callback function to apply this class*/
@@ -339,7 +339,8 @@ nav > ul.menu {
 	}
 }
 .menu > li > a {
-	line-height: 1.8; 
+	line-height: 1.8;
+	color: $header-black;
 	@media screen and #{breakpoint(small only)} {
 		font-size: .9rem;
 		line-height: 1.5;
@@ -356,9 +357,15 @@ nav > ul.menu {
 .menu li {
 	padding: 1px 0 0 0;
 }
-.menu > li.active > a {
+.menu:not(.nested) > li.active > a {
 	border-left: 4px solid $primary-color;
+	padding-left: 12px;
 	background: lighten($primary-color, 14%);
+	color: $white;
+}
+.menu.nested > li.active > a {
+	padding-left: 12px;
+	background: lighten($primary-color, 20%);
 	color: $white;
 }
 .menu > li:hover:not(.active) > a {
@@ -367,6 +374,9 @@ nav > ul.menu {
 .menu li li > a {
 	padding-left: .5rem;
 	padding-right: .5rem;
+}
+.menu li.active li.active > a {
+	padding-left: 6px;
 }
 nav .button {display: block}
 
@@ -577,6 +587,7 @@ body.pristup,
 body.javna_nabava,
 body.natjecaji,
 body.slobodne_aktivnosti,
+body.posebni_programi,
 body.krizevci {
 	header {margin-bottom: 1rem}
 }
@@ -682,7 +693,6 @@ body.radovi {
 		margin-left: 8rem;
 	}
 }
-
 body.zakljucci,
 body.natjecaji {
 	/*Cool hack to reverse the order*/
