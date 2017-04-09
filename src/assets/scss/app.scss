@@ -341,7 +341,7 @@ nav > ul.menu {
 .menu > li > a {
 	line-height: 1.8;
 	color: $header-black;
-	@media screen and #{breakpoint(small only)} {
+	@media screen and (max-width: 500px) {
 		font-size: .9rem;
 		line-height: 1.5;
 	}
