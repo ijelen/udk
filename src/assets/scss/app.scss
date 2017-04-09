@@ -407,8 +407,6 @@ nav .button {display: block}
 	&.enlarge svg {opacity: 1}
 }
 
-#search-form {margin-top: 1rem}
-
 /* article */
 article, section {
 	margin-bottom: 1rem;
@@ -510,11 +508,6 @@ footer {
 		width: 8rem;
 		margin-top: 0;
 		path {fill: #999;}
-	}
-	.search-form {
-	@media screen and #{breakpoint(medium)} {
-		display: none
-		}
 	}
 }
 
