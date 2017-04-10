@@ -347,6 +347,9 @@ nav > ul.menu {
 		margin-top: 1.4rem;
 	}
 }
+.menu li {
+	padding: 1px 0 0 0;
+}
 .menu > li > a {
 	line-height: 1.8;
 	color: $header-black;
@@ -359,12 +362,10 @@ nav > ul.menu {
 		font-size: 1rem;
 	}
 }
+/* the arrow*/
 .menu > li.active > a::after {
 	border-color: $white transparent transparent;
 	transition: .5s all;
-}
-.menu li {
-	padding: 1px 0 0 0;
 }
 .menu:not(.nested) > li.active > a {
 	border-left: 4px solid $primary-color;
@@ -387,7 +388,6 @@ nav > ul.menu {
 .menu li.active li.active > a {
 	padding-left: 6px;
 }
-nav .button {display: block}
 
 /* #hero-image */
 #hero-image {
@@ -493,7 +493,6 @@ path:hover {fill: lighten($primary-color, 6%);}
 
 
 /* Footer */
-
 footer {
 	font-family: $menu-font-family;
 	border-top: 1px solid #999;
@@ -581,24 +580,12 @@ footer {
 
 
 /*TODO: use #main header*/
-body.fotogalerija, 
-body.domski_filmovi,
-body.zakljucci,
-body.dokumenti,
-body.pristup,
-body.javna_nabava,
-body.natjecaji,
-body.slobodne_aktivnosti,
-body.posebni_programi,
-body.krizevci {
+body:not(.naslovnica) {
 	header {margin-bottom: 1rem}
 }
 body.o_domu, 
 body.djelatnici, 
 body.odgojne_skupine {
-	header {
-		margin-bottom: 1rem;
-	}
 	.photos {
 		margin-bottom: 1rem;
 	}
@@ -624,9 +611,9 @@ body.domski_filmovi {
 }
 
 body.odgojne_skupine {
-		article {
-			margin-top: 1rem;
-			}
+	article {
+		margin-top: 1rem;
+		}
 	/* Tweak so there are two columns even on mobile if there's enough room */
 	@media screen and (min-width: 500px) {
 		article {
