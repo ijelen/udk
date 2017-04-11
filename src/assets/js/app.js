@@ -82,11 +82,25 @@ headroom.init();
 // Fire Swipebox
 $('.swipebox').swipebox();
 
+// Datum
+var datum = function() {
+	var day = new Date().getDate();
+	var month = new Date().getMonth() + 1;
+	var year = new Date().getFullYear();
+	var weekdays = ['Nedjelja', 'Ponedjeljak', 'Utorak', 'Srijeda', 'Četvrtak', 'Petak', 'Subota'];
+	// eg. Četvrtak, 23.3.2017.
+	return weekdays[new Date().getDay()] + ', ' + day + '. ' + month + '. ' + year + '.';
+}
+var span_datum = document.getElementById('datum');
+span_datum.textContent = datum();
+
+
+// wunderground.com weather API
 var vrijeme_celzijusa = document.getElementById('vrijeme_celzijusa');
 var vrijeme_opis = document.getElementById('vrijeme_opis');
 var vrijeme_ikona = document.getElementById('vrijeme_ikona');
-
-function getWeather() {
+var getWeather;
+(getWeather = function () {
   $.ajax({
   url : "http://www.vrtuljak.com/wunderground_jsonp.php",
   dataType : "jsonp",
@@ -95,12 +109,11 @@ function getWeather() {
 	  vrijeme_celzijusa.textContent = Math.round(parsed_json.current_observation.temp_c) + ' °C';
 	  vrijeme_opis.textContent = parsed_json.current_observation.weather.toLowerCase();
 	  vrijeme_ikona.src = parsed_json.current_observation.icon_url.replace('/i/c/k/', '/i/c/i/');
-  }
+	}
   });
-}
-getWeather();
-// Call weather every 15 minutes
-setInterval(getWeather, 1000*60*15);
+})()
+// Call weather every 2 minutes
+setInterval(getWeather, 1000*60*2);
 
 // https://css-tricks.com/snippets/jquery/smooth-scrolling/
 // :not([href*="#panel-"]) is here because of tabs in dokumenti_doma.html
