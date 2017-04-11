@@ -369,7 +369,19 @@ nav > ul.menu {
 .menu li.active li.active > a {
 	padding-left: 6px;
 }
-
+.notification {
+	background-color: $secondary-color;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	border-radius: 9px;
+	font-size: 11px;
+	line-height: 17px;
+	text-align: center;
+	position: relative;
+	top: -5px;
+	margin-left: 2px
+}
 /* #hero-image */
 #hero-image {
 	position: relative;
