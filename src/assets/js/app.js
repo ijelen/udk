@@ -28,38 +28,30 @@ var heroImage = document.getElementById('hero-image');
 // Had to be ignored by Babel plugin in gulpfile.babel.js
 window.addEventListener('scroll', debounce(isVisible, 200));
 
-// By Chris Coyier & tweaked by Mathias Bynens
-// https://css-tricks.com/fluid-width-youtube-videos/
-$(function() {
-	// Find all YouTube videos
-	var $allVideos = $("iframe[src^='https://www.youtube.com']")
-	// The element that is fluid width
-	// #yt is only on domski_filmovi.html, #main is default
-    var $fluidEl = $("#yt").length ? $("#yt") : $("#main");
-	// Figure out and save aspect ratio for each video
-	$allVideos.each(function() {
-		$(this)
-			.data('aspectRatio', this.height / this.width)	
-			// and remove the hard coded width/height
-			.removeAttr('height')
-			.removeAttr('width');
-	});
-	// When the window is resized
-	// (You'll probably want to debounce this), I did :)
-	$(window).resize(debounce(function() {
-		var newWidth = $fluidEl.width();
-		// Resize all videos according to their own aspect ratio
+(function ytResizeUseParent (videos) {
+	var $allVideos = $(videos);
+	if ($allVideos.length) {
+		// Figure out and save aspect ratio for each video
 		$allVideos.each(function() {
-			var $el = $(this);
-			$el
-				.width(newWidth)
-				.height(newWidth * $el.data('aspectRatio'));
+			$(this)
+				.data('aspectRatio', this.height / this.width)	
+				// and remove the hard coded width/height
+				.removeAttr('height')
+				.removeAttr('width');
 		});
-	// Kick off one resize to fix all videos on page load
-	}, 200)).resize();
-
-});
-
+		$(window).resize(debounce(function() {
+			// Resize all videos according to their own aspect ratio
+			$allVideos.each(function() {
+				var $el = $(this);
+				var newWidth = $(this).parent().width();
+				$el
+					.width(newWidth)
+					.height(newWidth * $el.data('aspectRatio'));
+			});
+		// Kick off one resize to fix all videos on page load
+		}, 200)).resize()
+	}
+})("iframe[src^='https://www.youtube.com']")
 
 // Headroom.js
 // Had to be ignored by Babel plugin in gulpfile.babel.js

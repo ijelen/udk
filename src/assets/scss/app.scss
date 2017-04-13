@@ -381,7 +381,8 @@ nav > ul.menu {
 	text-align: center;
 	position: relative;
 	top: -5px;
-	margin-left: 2px
+	margin-left: 2px;
+	display: none;
 }
 /* #hero-image */
 #hero-image {
@@ -692,7 +693,7 @@ body.natjecaji {
 }
 body.slobodne_aktivnosti #popis li, body.posebni_programi #popis li {margin-top: .3rem;}
 
-figure {
+figure.three {
 	&::after {
 		content: '';
 		display: block;
@@ -700,7 +701,25 @@ figure {
 	}
 	div {
 		width: 33.33%;
-		float: right;
+		float: left;
 		padding: 3px;
+		@media screen and #{breakpoint(small only)} {
+			width: auto;
+		}
+	}
+} 
+figure.two {
+	&::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	div {
+		width: 50%;
+		float: left;
+		padding: 3px;
+		@media screen and #{breakpoint(small only)} {
+			width: auto;
+		}
 	}
 } 
