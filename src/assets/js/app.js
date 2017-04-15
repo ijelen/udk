@@ -13,6 +13,14 @@ window.addEventListener('resize', resizeFixedLeftMenu);
 var toggle = document.getElementById("left-menu-toggle");
 toggle.addEventListener("click", function() {
 	$('body').toggleClass('show-left-menu');
+	$('body').removeClass('show-search-bar');
+})
+
+// Toggle search bar
+var searchBarToggle = document.getElementById("search-bar-toggle");
+searchBarToggle.addEventListener("click", function() {
+	$('body').toggleClass('show-search-bar');
+	$('body').removeClass('show-left-menu');
 })
 
 // Attach class "enlarge" to hero-image when windows scrolls for 150px
@@ -59,13 +67,14 @@ var titleBar = document.querySelector("#title-bar");
 // Set the option
 Headroom.options.onUnpin = function() {
 	if ($('#title-bar').is(":visible")) {
+		$('body').removeClass('show-search-bar');
 		$('body').removeClass('show-left-menu');
 		// Remove outline on .menu-icon button on mobile
 		$('.menu-icon').blur();
 		// Hide the menu for a second for a rare occasion that it isn't clicked but the window is scrolled
-		var menu = document.getElementById('left-menu');
-		menu.style.display = "none";
-		setTimeout(function(){menu.style.display = "block"; }, 1000);
+		// var menu = document.getElementById('left-menu');
+		// menu.style.display = "none";
+		// setTimeout(function(){menu.style.display = "block"; }, 1000);
 	}
 }
 var headroom  = new Headroom(titleBar);

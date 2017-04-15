@@ -18,12 +18,31 @@
       <img src="assets/img/brun-300.jpg" width="50px">{{> svg_logo}}
     </a>
   </div>
-  <div id="left-menu-toggle">
-    <button class="menu-icon" type="button" ></button>
-    <div class="title-bar-title">Izbornik</div>
+  <div id="title-bar-buttons">
+    <div id="search-bar-toggle">
+      {{>magnifying-glass}}
+    </div>
+    <div id="left-menu-toggle">
+      <button class="menu-icon" type="button" ></button>
+      <div class="title-bar-title">Izbornik</div>
+    </div>
   </div>
 </div>
 <!-- End: Title bar -->
+
+<!-- Search bar -->
+<div id="search-bar" class="show-for-small-only">
+  <form>
+  <div class="row collapse">
+    <div class="small-3 columns">
+      <label for="middle-label" class="text-right middle">Label</label>
+    </div>
+    <div class="small-9 columns">
+      <input type="text" id="middle-label" placeholder="Traži">
+    </div>
+  </div>
+</form>
+</div>
 
 <div class="row collapse" id="wrapper">
   <div class="medium-3 columns" id="left-menu-wrapper">
