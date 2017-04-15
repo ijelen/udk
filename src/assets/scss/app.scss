@@ -65,9 +65,10 @@ body {
 	@media screen and #{breakpoint(medium only)} {
 		background-color: $body-background;
 		}
-	@media screen and #{breakpoint(small only)} {
-			font-size: .9rem;
-		}
+	font-size: .9rem; 
+	@media screen and #{breakpoint(large)} {
+		font-size: 1rem;
+	}
 }
 
 h1 {
@@ -85,7 +86,9 @@ h2 {
 		color: $primary-color;
 	}	
 }
-h3 {font-weight: bold}
+h3 {
+	font-weight: bold;
+}
 h4 {
 	font-weight: bold;
 	font-family: $body-font-family;
@@ -365,10 +368,6 @@ nav > ul.menu {
 	@media screen and (max-width: 500px) {
 		font-size: .9rem;
 		line-height: 1.5;
-	}
-	font-size: .9rem; 
-	@media screen and #{breakpoint(large)} {
-		font-size: 1rem;
 	}
 }
 /* the arrow*/
