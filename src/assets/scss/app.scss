@@ -289,14 +289,14 @@ header#glava {
 		display: flex;
 		width: 130px;
 		justify-content: space-between;
-		#search-bar-toggle svg {
+		
+	#search-bar-toggle {
+		svg {
 			width: 20px;
 			height: 100%;
 			cursor: pointer;
-			
+			transform: translateY(-1px);	
 		}
-	#search-bar-toggle {
-		outline_: 1px solid yellow;
 	}
 }
 #logo a {
