@@ -30,14 +30,6 @@
 </div>
 <!-- End: Title bar -->
 
-<!-- Search bar -->
-<div id="search-bar" class="show-for-small-only">
-  <form action="#">
-    <input type="text" placeholder="Pretraži stranice"/>
-    <input type="submit" value="Kreni"/>
-  </form>
-</div>
-
 <div class="row collapse" id="wrapper">
   <div class="medium-3 columns" id="left-menu-wrapper">
   <!-- #left-menu -->
@@ -48,6 +40,19 @@
     {{> svg_logo}}
   </div>
   </a>
+    <!-- Search bar -->
+  <div id="search-bar">
+    <form role="search" method="get" class="search-form" action="">
+      <label for="search-form-field">
+        <span class="screen-reader-text">Search for:</span>
+      </label>
+      <input id="search-form-field" class="search-field" placeholder="Traži …" value="" name="s" type="search">
+      <button type="submit" class="search-submit">
+        {{>magnifying-glass}}
+        <span class="screen-reader-text">Search</span>
+      </button>
+    </form>
+  </div>
     <ul class="vertical menu" data-accordion-menu data-multi-open="false">
       <li{{#ifpage 'index' 'index2'}} class="active"{{/ifpage}}><a href="index.html">Naslovnica</a></li>
       <li{{#ifpage 'kontakt'}} class="active"{{/ifpage}}><a href="kontakt.html">Kontakt</a></li>
