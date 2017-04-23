@@ -19,8 +19,10 @@ UNCSS_OPTIONS:
 PATHS:
   # Path to dist folder
   dist: "dist"  
+  # Path to src php files
+  php: "src/php/*.php"
   # Paths to Wordpress theme folder
-  wp_theme: "~/projects/vvv/www/wordpress-default/public_html/wp-content/themes/udk"
+  wp_theme: "C:/Users/igorj/projects/vvv/www/wordpress-default/public_html/wp-content/themes/udk"
   # Paths to static assets that aren't images, CSS, or JavaScript
   assets:
     - "src/assets/**/*"

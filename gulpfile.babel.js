@@ -32,17 +32,46 @@ gulp.task('build',
 gulp.task('default',
   gulp.series('build', server, watch));
 
+
+gulp.task('php',
+  gulp.series(clean_for_wp, gulp.parallel(copy_php, sass_for_wp, javascript_for_wp, images_for_wp, copy_for_wp), proxy, watch_for_wp));
+
+// copy PHP files
+function copy_php(done) {
+  gulp.src(PATHS.php)
+    .pipe($.newer(PATHS.wp_theme))
+    .pipe(gulp.dest(PATHS.wp_theme));
+    done();
+}
+
+// Use a proxy mode for Wordpress with Vagrant
+function proxy(done) {
+  browser.init({
+    proxy: "http://local.wordpress.dev/", 
+    port: 80 
+  });
+  done();
+}
+
 // Delete the "dist" folder
 // This happens every time a build starts
 function clean(done) {
   rimraf(PATHS.dist, done);
 }
+function clean_for_wp(done) {
+  rimraf(PATHS.wp_theme + '/assets', done);
+}
+
 
 // Copy files out of the assets folder
 // This task skips over the "img", "js", and "scss" folders, which are parsed separately
 function copy() {
   return gulp.src(PATHS.assets)
     .pipe(gulp.dest(PATHS.dist + '/assets'));
+}
+function copy_for_wp() {
+  return gulp.src(PATHS.assets)
+    .pipe(gulp.dest(PATHS.wp_theme + '/assets'));
 }
 
 // Copy page templates into finished HTML files
@@ -92,6 +121,22 @@ function sass() {
     .pipe(browser.reload({ stream: true }));
 }
 
+// Compile Sass into CSS, minify it and copy it to WP theme folder
+function sass_for_wp() {
+  return gulp.src('src/assets/scss/app.scss')
+    //.pipe($.sourcemaps.init())
+    .pipe($.sass({
+      includePaths: PATHS.sass
+    })
+      .on('error', $.sass.logError))
+    .pipe($.autoprefixer({
+      browsers: COMPATIBILITY
+    }))
+    .pipe($.cssnano())
+    .pipe(gulp.dest(PATHS.wp_theme + '/assets/css'))
+    //.pipe(browser.reload({ stream: true }));
+}
+
 // Combine JavaScript into one file
 // In production, the file is minified
 function javascript() {
@@ -105,6 +150,15 @@ function javascript() {
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
     .pipe(gulp.dest(PATHS.dist + '/assets/js'));
 }
+function javascript_for_wp() {
+  return gulp.src(PATHS.javascript)
+    .pipe($.babel({ignore: ['what-input.js', 'headroom.min.js', 'javascript-debounce.min.js']}))
+    .pipe($.concat('app.js'))
+    .pipe($.uglify()
+      .on('error', e => { console.log(e); })
+    )
+    .pipe(gulp.dest(PATHS.wp_theme + '/assets/js'));
+}
 
 // Copy images to the "dist" folder
 // In production, the images are compressed
@@ -114,6 +168,13 @@ function images() {
       progressive: true
     })))
     .pipe(gulp.dest(PATHS.dist + '/assets/img'));
+}
+function images_for_wp() {
+  return gulp.src('src/assets/img/**/*')
+    .pipe($.imagemin({
+      progressive: true
+    }))
+    .pipe(gulp.dest(PATHS.wp_theme + '/assets/img'));
 }
 
 // Start a server with BrowserSync to preview the site in
@@ -140,3 +201,14 @@ function watch() {
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
   gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
 }
+
+// Watch for changes to static assets, pages, Sass, and JavaScript
+// WP version
+function watch_for_wp() {
+  gulp.watch(PATHS.assets, copy_for_wp);
+  gulp.watch(PATHS.php).on('all', gulp.series(copy_php, browser.reload));
+  gulp.watch('src/assets/scss/**/*.scss').on('all', gulp.series(sass_for_wp, browser.reload));
+  gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript_for_wp, browser.reload));
+  gulp.watch('src/assets/img/**/*').on('all', gulp.series(images_for_wp, browser.reload));
+  }
+
