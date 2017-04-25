@@ -130,3 +130,30 @@ if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && lo
   }
 }
 });
+
+$(".search-submit").hover(function() {
+    $("#search-form-field").addClass( "hover" );
+  }, function() {
+    $("#search-form-field").removeClass( "hover" );
+  });
+
+
+// Mapbox
+var resizeMap; 
+(resizeMap = function() {
+	var mapEl = $("#map");
+	// var c = map.find("canvas");
+	if (mapEl.length) {
+		var width = $("#main").width();
+		mapEl.css({'width': width + 'px'});
+		map.resize();
+		if (width < 740) {
+			// On smaller screens move the image closer to the center
+			map.setCenter([16.5498176,46.026132]);
+		} else {
+			map.setCenter([16.5463765,46.0262372]);
+		}
+
+	}
+})();
+window.addEventListener("resize", resizeMap);

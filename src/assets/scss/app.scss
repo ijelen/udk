@@ -163,7 +163,8 @@ abbr {color: inherit}
 	transition_: filter 1s;
 }
 #main svg.logo {
-	width: 55%; 
+	width: 55%;
+	height: 43px; 
 	margin: 3.3rem 0 0 0;
 	@media screen and #{breakpoint(medium only)} {
 		margin-top: 2.6rem;
@@ -267,7 +268,7 @@ header#glava {
  		min-height: 100%; 
  		max-height: inherit;
   		box-shadow: none;
-  		top: initial;
+  		top: 0;
   		position: static;
   		overflow: initial; 
 	}
@@ -378,11 +379,11 @@ header#glava {
 			width: 33px;
 			height: 33px;
 		}
-		input {
-			background: $body-background;
+		input { 
+			background: transparent;
 			font-style: italic;
 		}
-		input:hover, input:focus {
+		input:hover, input#search-form-field.hover, input:focus  {
 			background: lighten($body-background, 5%);
 			path {fill: $primary-color};
 			font-style: normal;
@@ -487,6 +488,7 @@ article, section {
 	figure {margin-bottom: 1rem}
 	
 	.photos {
+		margin-bottom: 1rem;
 		&:after {
 			content: '';
 			display: block;
