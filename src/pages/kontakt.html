@@ -19,23 +19,23 @@ body_class: kontakt
 
     <h3>E-mail adresa</h3> 
     <p id="mail">ured@dom-ucenicki-kc.skole.hr<br> <span>(adresa ucenicki-dom-krizevci@kc.htnet.hr se više ne koristi)</span></p>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.35.1/mapbox-gl.js'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v0.35.1/mapbox-gl.css' rel='stylesheet' />
+    
 
 
-
-<div id='map' style='width: 836px; height: 400px;'></div>
+<script src='https://api.mapbox.com/mapbox-gl-js/v0.35.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.35.1/mapbox-gl.css' rel='stylesheet' />
+<div id='mapbox' style='width: 836px; height: 400px;'></div>
 <script>
   mapboxgl.accessToken = 'pk.eyJ1IjoiaWplbGVuIiwiYSI6ImtWc0YxeE0ifQ.5EwRtosGXLP9EensPawlPA';
   var map = new mapboxgl.Map({
-    container: 'map',
+    container: 'mapbox',
     center: [16.5463765,46.0262372],
     style: 'mapbox://styles/mapbox/light-v9',
     zoom: 15
   });
 
-  map.on('load', () => {
-    map.loadImage('assets/img/brun-circle.png', (error, image) => {
+  map.on('load', function() {
+    map.loadImage('assets/img/brun-circle.png', function(error, image) {
         if (error) throw error;
         map.addImage('cat', image);
         map.addLayer({

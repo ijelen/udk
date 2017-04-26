@@ -103,7 +103,7 @@ var vrijeme_ikona = document.getElementById('vrijeme_ikona');
 var getWeather;
 (getWeather = function () {
   $.ajax({
-  url : "http://www.vrtuljak.com/wunderground_jsonp.php",
+  url : "http://www.radiovrbovec.hr/weather.php",
   dataType : "jsonp",
   jsonpCallback : "mojCallBack",
   success : function(parsed_json) {

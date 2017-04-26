@@ -8,16 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Učenički dom Križevci {{title}}</title>
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="{{root}}assets/css/ie.css" />
+    <![endif]-->
   </head>
   <body class="{{body_class}}">
   
 <!-- Title bar (Show for small only) -->
 <div id="title-bar" class="show-for-small-only">
-  <div id="logo">
-    <a href="./">
-      <img src="assets/img/brun-300.jpg" width="50px">{{> svg_logo}}
-    </a>
-  </div>
+  <a href="./">
+    <img src="assets/img/brun-300.jpg" width="50px">{{> svg_logo}}
+  </a>
   <div id="title-bar-buttons">
     <div id="search-bar-toggle">
       {{>magnifying-glass}}
@@ -81,8 +82,10 @@
 <!-- #main -->
   <div class="medium-9 columns" id="main">
   <header id="glava">
-  <!-- Logo -->
-  <a href="./">{{>svg_logo}}</a>
+  <div id="logo_head" style="padding-bottom: 6.44%">
+    <!-- Logo -->
+    <a href="./">{{>svg_logo}}</a>
+  </div>
    <p id="time"><span id="datum"></span><span id="vrijeme"><span id="vrijeme_celzijusa"></span><img id="vrijeme_ikona" src=""><span id="vrijeme_opis"></span></span></p> 
  </header>
 

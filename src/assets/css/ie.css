@@ -1,0 +1,7 @@
+
+article .photos.flex, section .photos.flex {
+		display: block;
+	}
+article .photos.flex div, section .photos.flex div {
+		width: 20%;
+	}
