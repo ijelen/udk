@@ -7,6 +7,10 @@
     <title><?php bloginfo('name'); ?></title>
     <!-- <link rel="stylesheet" href="assets/css/app.css"> -->
     <?php wp_head(); ?>
+    <?php if (is_page('kontakt')): ?>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v0.35.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.35.1/mapbox-gl.css' rel='stylesheet' />
+  <?php endif; ?>
   </head>
   <body <?php $slug = basename(get_permalink()); body_class($slug); ?>>
   

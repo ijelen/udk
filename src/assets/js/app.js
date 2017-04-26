@@ -110,7 +110,10 @@ var getWeather;
 	  vrijeme_celzijusa.textContent = Math.round(parsed_json.current_observation.temp_c) + ' °C';
 	  vrijeme_opis.textContent = parsed_json.current_observation.weather.toLowerCase();
 	  vrijeme_ikona.src = parsed_json.current_observation.icon_url.replace('/i/c/k/', '/i/c/i/');
-	}
+	},
+	error : function(jqXHR, textStatus, errorThrown) {
+		console.log(textStatus);
+	} 
   });
 })()
 // Call weather every 2 minutes
@@ -141,7 +144,7 @@ $(".search-submit").hover(function() {
 // Mapbox
 var resizeMap; 
 (resizeMap = function() {
-	var mapEl = $("#map");
+	var mapEl = $("#mapbox");
 	// var c = map.find("canvas");
 	if (mapEl.length) {
 		var width = $("#main").width();

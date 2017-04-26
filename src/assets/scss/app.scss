@@ -833,10 +833,14 @@ figure.two {
 		width: 20%;
 	}
 	#title-bar {display: block}
-	#title-bar a {
-		height: 3rem; 
-		display: block;
+	#title-bar-logo {
 		float: left;
+		width: 50%;
+		height: 100%;
+	}
+	#title-bar a {
+		height: 100%; 
+		display: block;
 	}
 	#title-bar img {
     	display: block;
