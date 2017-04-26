@@ -210,13 +210,19 @@ article.obavijest {
 
 header#glava {
 	font-family: $menu-font-family;
-	#logo_head {
+	/* 0.09439252336 */
+	#logo_wrapper {
 		width: 55%;
+		margin-bottom: 4px;
+	}
+	a#logo_head {
+		display: block;
 		position: relative;
 		height: 0;
 		padding: 0;
 		padding-bottom: 100%;
 		margin-top: 3rem;
+		box-sizing: content-box;
 		svg {
 			position: absolute;
 			height: 100%; 
@@ -527,17 +533,6 @@ article, section {
 		}
 	}
 }
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-	/* IE10+ CSS styles go here */
-	/* https://philipnewcomer.net/2014/04/target-internet-explorer-10-11-css/ */
-	article .photos.flex, section .photos.flex {
-		display: block;
-	}
-	article .photos.flex div, section .photos.flex div {
-		width: 20%;
-	}
-}
-
 
 /* #vise-vijesti */
 #vise-vijesti {
@@ -826,4 +821,41 @@ figure.two {
 			width: 100;
 		}
 	}
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	/* IE10+ CSS styles go here */
+	/* https://philipnewcomer.net/2014/04/target-internet-explorer-10-11-css/ */
+	article .photos.flex, section .photos.flex {
+		display: block;
+	}
+	article .photos.flex div, section .photos.flex div {
+		width: 20%;
+	}
+	#title-bar {display: block}
+	#title-bar a {
+		height: 3rem; 
+		display: block;
+		float: left;
+	}
+	#title-bar img {
+    	display: block;
+    	float: left;
+    	margin-top: 5px;
+	}
+	#title-bar-buttons {
+		float: right;
+		display: block;
+		width: 100px;
+		height: 3rem;
+		div {
+			width: 50%; 
+			height: 100%; 
+			float: left;
+			text-align: right;
+		}
+		.title-bar-title {display: none;}
+	}
+	.menu-icon {height: auto; width: 27px}
+
 } 
