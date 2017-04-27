@@ -18,7 +18,7 @@ UNCSS_OPTIONS:
 # Gulp will reference these paths when it copies files
 PATHS:
   # Path to dist folder
-  dist: "dist"  
+  dist: "docs"  
   # Path to src php files
   php: "src/php/*.php"
   # Paths to Wordpress theme folder
