@@ -1,7 +1,35 @@
-
 article .photos.flex, section .photos.flex {
 		display: block;
 	}
-article .photos.flex div, section .photos.flex div {
+	article .photos.flex div, section .photos.flex div {
 		width: 20%;
 	}
+	#title-bar {display: block}
+	#title-bar-logo {
+		float: left;
+		width: 50%;
+		height: 100%;
+	}
+	#title-bar a {
+		height: 100%; 
+		display: block;
+	}
+	#title-bar img {
+    	display: block;
+    	float: left;
+    	margin-top: 5px;
+	}
+	#title-bar-buttons {
+		float: right;
+		display: block;
+		width: 100px;
+		height: 3rem;
+		div {
+			width: 50%; 
+			height: 100%; 
+			float: left;
+			text-align: right;
+		}
+		.title-bar-title {display: none;}
+	}
+	.menu-icon {height: auto; width: 27px}

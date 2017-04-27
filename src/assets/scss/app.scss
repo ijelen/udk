@@ -310,6 +310,7 @@ header#glava {
 	width: 100%;
 	z-index: 5;
 	}
+	#title-bar-logo svg {transform: translateY(3px)}
 	#title-bar-buttons {
 		display: flex;
 		width: 130px;
@@ -756,7 +757,14 @@ body.kontakt {
 		}
 	}
 	#mail span {color: $dark-gray}
-	#mapbox {margin-top: 2.4rem}
+	#mapbox {
+		margin-top: 2.4rem; 
+		height: 400px; 
+		width: 100%;
+		@media screen and #{breakpoint(small only)} {
+			height: 250px;
+		}
+	}
 }
 
 body.radovi {
