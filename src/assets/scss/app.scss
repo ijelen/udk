@@ -66,9 +66,6 @@ body {
 		background-color: $body-background;
 		}
 	font-size: .9rem; 
-	@media screen and #{breakpoint(large)} {
-		font-size: 1rem;
-	}
 }
 
 h1 {
